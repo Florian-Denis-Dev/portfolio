@@ -1,0 +1,72 @@
+@import 'variable.scss';
+@import 'mixin.scss';
+
+/* Header */
+header {
+	padding: 60px 0 10px;
+	width: 90%;
+	@include respond(large) {
+		width: 90%;			
+	}
+	nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0 20px;
+		.left {
+			img{
+				height: 120px;
+			}
+			
+		}
+	}
+	button {
+		background: none;
+		border: none;
+	  }
+	  
+	nav img {
+		height: 38px;
+		@include respond(medium) {
+			height: 46.88px;
+		}
+	}
+	
+	ul {
+		padding: 0;
+		list-style: none;
+		display: flex;
+			align-items:center;
+		gap: 4vw;
+		@include respond(small) {
+			gap: 1rem;
+		}
+	}
+	
+	a {
+		text-decoration: none;
+	}
+	a.active {
+		text-decoration: underline;
+	}
+	.liens-header {
+		font-size: 24px;
+		img{
+            &:hover{
+                cursor: pointer;
+            }
+        }
+		&:hover {
+			text-decoration: underline;
+		}
+		@include respond(medium) {
+			font-size: 1rem;
+		}
+		@include respond(small) {
+			font-size: 14px;
+		}	
+	}
+	@include respond(small) {
+		padding: 0.7rem 1rem;
+	}
+}

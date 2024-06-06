@@ -1,0 +1,26 @@
+@import 'variable.scss';
+@import 'mixin.scss';
+
+/* Home */
+.Home{
+    max-width: 1240px;
+	display: flex;
+	flex-direction: column;
+}
+
+.intro {
+	margin: 100px 0 0;
+	display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+	h2 {
+		margin: 0;
+	}
+}
+
+.Home-link {
+	display: flex;
+		justify-content: space-around;
+	gap: 50px;
+}

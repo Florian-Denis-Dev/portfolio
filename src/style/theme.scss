@@ -1,0 +1,59 @@
+@import 'variable.scss';
+
+.light {
+    background-color: $background-color_light;
+    color: $color_blue;
+
+    h3 {
+        color: $color_paragraph;
+        &:hover{
+            color: $color_dark_grey;
+        }
+	}
+    a {
+        text-decoration-color: $color_paragraph;
+        &:hover{
+            text-decoration-color: $color_dark_grey;
+        }
+    }
+    #logo{
+            transition: filter 0.3s ease;
+            &:hover{
+                filter: drop-shadow(0 0 20px $background-color_darker);
+            }   
+    }
+    .liens-header {
+		color: $color_paragraph;
+        transition: filter 0.3s ease;
+		&:hover {
+			color: $background-color_darker;
+            filter: drop-shadow(0 0 20px $color_paragraph);
+        }
+    }
+}
+  
+.dark {
+    background-color: $background-color_dark;
+    color: $color_light;
+    h1 {
+        color: $color_gradient_gold;
+    }
+    h2 {
+        color: $color_paragraph_dark;
+    }
+    h3 {
+        color: $color_link;
+	}
+    a {
+        text-decoration-color: $color_paragraph_dark;
+    }
+    footer {
+        background-color: $background-color_darker;
+    }
+    .liens-header {
+		color: $color_paragraph_dark;
+		&:hover {
+			color: $color_flash_gold;
+        }
+    }
+}

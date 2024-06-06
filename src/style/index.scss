@@ -1,0 +1,39 @@
+@import 'variable.scss';
+@import 'mixin.scss';
+@import 'theme.scss';
+@import 'noise.scss';
+
+#root {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
+    ul{
+        list-style-type: none;
+        margin: 0;
+    	padding: 0;
+    }
+}
+
+.app-content {
+	display: flex;
+	flex-direction: column;
+}
+
+body {
+	margin: 0;
+	font-family: $font-family_1;
+	font-size: 1.5rem;
+	height: 100%;
+
+	@include respond(medium) {
+		font-size: 0.9rem;
+	}
+}
+
+@import 'about.scss';
+@import 'error.scss';
+@import 'footer.scss';
+@import 'header.scss';
+@import 'home.scss';
+@import 'works.scss';

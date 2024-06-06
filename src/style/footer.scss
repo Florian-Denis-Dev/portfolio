@@ -1,0 +1,28 @@
+@import 'variable.scss';
+@import 'mixin.scss';
+/* Footer */
+
+footer {
+	width: 100%;
+	background-color: $background-color_light;
+	margin-top: auto;	
+	box-sizing: border-box;
+	@media (max-width: 768px) {
+		min-height: 40vh;
+	}
+}
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem;
+	
+	p {
+		margin: 0.5em 1.5em;
+	};
+	@media (max-width: 768px) {
+		margin-top: auto;
+	}
+}
