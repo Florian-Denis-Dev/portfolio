@@ -1,26 +1,35 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import P3 from "../../assets/p3.png";
 import P6 from "../../assets/p6.png";
 import P7 from "../../assets/p7.png";
 
-
-function Works(){
-    return(
+function Works({ projects }) {
+    return (
         <div className="works">
-                            <div>
-                    <fig>
-                        <img src={P3} alt="work frontend for sophie bluel"></img>
-                        <figcaption>frontend work on <br></br>sophie bluel website</figcaption>
-                    </fig>
-                    <fig>
-                        <img src={P6} alt="work frontend for kasa"></img>
-                        <figcaption>frontend work on <br></br>kasa website</figcaption>
-                    </fig>
-                    <fig>
-                        <img src={P7} alt="work backend for mon vieux grimmoire"></img>
-                        <figcaption>backend work on <br></br>mon vieux grimmoire</figcaption>
-                    </fig>
-                </div>
+            <div>
+                {projects.map((project, index) => {
+                    let imgSrc;
+                    let altText;
+                    if (index === 0) {
+                        imgSrc = P3;
+                        altText = "work frontend for sophie bluel";
+                    } else if (index === 1) {
+                        imgSrc = P6;
+                        altText = "work frontend for kasa";
+                    } else {
+                        imgSrc = P7;
+                        altText = "work backend for mon vieux grimmoire";
+                    }
+                    return (
+                        <fig key={project.id}>
+                            <img src={imgSrc} alt={altText}></img>
+                            <figcaption>{project.title}</figcaption>
+                            <Link to={`/works/${project.id}`}>Voir les détails</Link>
+                        </fig>
+                    );
+                })}
+            </div>
         </div>
     )
 }
