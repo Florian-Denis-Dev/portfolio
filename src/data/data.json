@@ -1,26 +1,26 @@
 [
 	{
-	  "id": "test",
-	  "title": "Projet 1",
-	  "description": "Description du projet 1...",
-	  "technologies": ["React", "CSS", "JavaScript"],
+	  "id": "project1",
+	  "title": "Sophie bluel",
+	  "description": "A frontend work for the website of a great architecte: Sophie Bluel",
+	  "technologies": ["html", "CSS", "JavaScript"],
 	  "sourceLink": "https://github.com/user/projet1",
-	  "images": ["../assets/FD.webp"]
+	  "images": ["p3.png"]
 	},
 	{
-	  "id": "projet2",
-	  "title": "Projet 2",
-	  "description": "Description du projet 2...",
-	  "technologies": ["Node.js", "Express", "MongoDB"],
+	  "id": "project2",
+	  "title": "Kasa",
+	  "description": "A frontend and backend works for the website kasa",
+	  "technologies": ["react", "scss", "javascript"],
 	  "sourceLink": "https://github.com/user/projet2",
-	  "images": ["chemin/vers/image3.png", "chemin/vers/image4.png"]
+	  "images": ["p6.png"]
 	},
 	{
-		"id": "projet3",
-		"title": "Projet 2",
-		"description": "Description du projet 2...",
+		"id": "project3",
+		"title": "Mon vieux grimmoire",
+		"description": "Description du projet 3...",
 		"technologies": ["Node.js", "Express", "MongoDB"],
-		"sourceLink": "https://github.com/user/projet2",
-		"images": ["chemin/vers/image5.png", "chemin/vers/image6.png"]
+		"sourceLink": "https://github.com/user/projet3",
+		"images": ["p7.png"]
 	  }
   ]

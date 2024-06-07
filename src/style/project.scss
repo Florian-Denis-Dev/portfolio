@@ -1,0 +1,8 @@
+@import 'variable.scss';
+@import 'mixin.scss';
+
+.project-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

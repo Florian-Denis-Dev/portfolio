@@ -162,8 +162,12 @@
 }
 #root ul {
   list-style-type: none;
+}
+
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .app-content {
@@ -172,7 +176,6 @@
 }
 
 body {
-  margin: 0;
   font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
   height: 100%;
@@ -186,56 +189,24 @@ body {
 /* About */
 .about {
   width: 100%;
-  max-width: 1240px;
-}
-@media (max-width: 1440px) {
-  .about {
-    width: 90%;
-  }
-}
-@media (max-width: 375px) {
-  .about {
-    width: 100%;
-  }
-}
-
-.about-visuel {
-  height: 14rem;
-  overflow: hidden;
-  margin: 1.2rem 0;
-}
-.about-visuel img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 50% 50%;
-  border-radius: 15px;
-  filter: brightness(50%);
-}
-@media (max-width: 375px) {
-  .about-visuel {
-    margin: 1rem 1.5rem;
-    height: 7rem;
-  }
-}
-
-.tools {
-  padding: 10px;
-  border-radius: 60px 1%;
-  border: 3px solid #f4d398;
-}
-.tools h3 {
-  color: #BFA181;
-}
-.tools div {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
 }
-.tools div img {
-  width: 20rem;
-  height: auto;
-  margin: 20px;
-  border-radius: 10%;
+.about img {
+  height: 30rem;
+  border-radius: 48px 0 0;
+  width: 40%;
+  object-position: 50% 170%;
+  object-fit: cover;
+  background-color: #ffb700;
+  mix-blend-mode: luminosity;
+}
+.about .about-text p {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 48px 0;
 }
 
 /*or?*/
@@ -477,6 +448,21 @@ header .liens-header:hover {
   height: 100%;
   margin: 20px;
   border-radius: 10% 1%;
+}
+
+/*or?*/
+/*bleu turquoise*/
+/*light turquoise*/
+/*sable*/
+/* bleu foncé*/
+/* banque de couleur de couleurs*/
+/* #ebe2cd; :clair sable*/
+/* #194058; :bleu plus clair que celui de backgound dark*/
+/* #0B0F2B; :bleu plus foncé*/
+.project-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*# sourceMappingURL=index.css.map */

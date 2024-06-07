@@ -1,18 +1,20 @@
 import React from "react";
-import REACT from "../../assets/react.png";
-import MONGODB from "../../assets/mongodb.png";
-import SASS from "../../assets/sass.png";
+import me from '../../assets/FD.webp'
+
 
 function About(){
     return(
         <div className="about">
-            <div className="tools">
-                <h3>tools</h3>
-                <div>
-                    <img src={REACT} alt="react"></img>
-                    <img src={MONGODB} alt="mongodb"></img>
-                    <img src={SASS} alt="sass"></img>
-                </div>
+            <img src={me} alt="Florian"></img> 
+            <div className="about-text">
+                <h3>About</h3>
+                <p>
+                    Hi, i'm Florian DENIS, a french web developper, <br></br>
+                    passionated by the newest technologies, <br></br>
+                    like the blockchains and ai, <br></br>
+                    and i hope i could contribute to help company and peoples.
+                </p>
+                <a href="">my resume</a>
             </div>
         </div>
     )

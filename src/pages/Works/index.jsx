@@ -23,9 +23,10 @@ function Works({ projects }) {
                     }
                     return (
                         <fig key={project.id}>
-                            <img src={imgSrc} alt={altText}></img>
+                            <Link to={`/works/${project.id}`}>
+                                <img src={imgSrc} alt={altText}></img>
+                            </Link>
                             <figcaption>{project.title}</figcaption>
-                            <Link to={`/works/${project.id}`}>Voir les détails</Link>
                         </fig>
                     );
                 })}
