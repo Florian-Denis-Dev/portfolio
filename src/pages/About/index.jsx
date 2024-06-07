@@ -1,6 +1,6 @@
 import React from "react";
-import me from '../../assets/FD.webp'
-
+import me from '../../assets/FD.webp';
+import cv from '../../assets/cv.pdf';
 
 function About(){
     return(
@@ -14,7 +14,7 @@ function About(){
                     like the blockchains and ai, <br></br>
                     and i hope i could contribute to help company and peoples.
                 </p>
-                <a href="">my resume</a>
+                <a href={cv} target="_blank" rel="noopener noreferrer">My resume</a>
             </div>
         </div>
     )
