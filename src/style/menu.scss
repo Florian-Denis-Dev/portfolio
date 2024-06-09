@@ -1,0 +1,32 @@
+/*
+ul {
+    counter-reset: counter;
+    li{
+        counter-increment: counter;
+        list-style: none;
+        margin-left: -1.5rem;
+        position: relative;
+        overflow: hidden;
+        Link {
+            position: relative;
+            transform: translateY(100px);
+            &::before{
+                content: "0" counter(counter);
+                font-size: 1rem;
+                font-family: studiofeixen-writer,studiofeixen,Arial,Helvetica,sans-serif;
+                letter-spacing: -.1em;
+                margin-right: .5rem
+            }
+        }
+        h1{
+            text-transform: uppercase;
+            font-variation-settings: "wght" 800, "wdth" 125;
+            font-size: 4.5rem;
+            transition: .4s;   
+            &:hover{
+                font-variation-settings: "wght" 800,"wdth" 100
+            }
+        }
+    }
+}
+    */

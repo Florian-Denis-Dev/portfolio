@@ -6,32 +6,37 @@ import P7 from "../../assets/p7.png";
 
 function Works({ projects }) {
     return (
-        <div className="works">
-            <div>
-                {projects.map((project, index) => {
-                    let imgSrc;
-                    let altText;
-                    if (index === 0) {
-                        imgSrc = P3;
-                        altText = "work frontend for sophie bluel";
-                    } else if (index === 1) {
-                        imgSrc = P6;
-                        altText = "work frontend for kasa";
-                    } else {
-                        imgSrc = P7;
-                        altText = "work backend for mon vieux grimmoire";
-                    }
-                    return (
-                        <fig key={project.id}>
-                            <Link to={`/works/${project.id}`}>
-                                <img src={imgSrc} alt={altText}></img>
-                            </Link>
-                            <figcaption>{project.title}</figcaption>
-                        </fig>
-                    );
-                })}
+        <>
+            <div className="works-title">
+                <h2>My projects</h2>
             </div>
-        </div>
+            <div className="works">
+                <div>
+                    {projects.map((project, index) => {
+                        let imgSrc;
+                        let altText;
+                        if (index === 0) {
+                            imgSrc = P3;
+                            altText = "work frontend for sophie bluel";
+                        } else if (index === 1) {
+                            imgSrc = P6;
+                            altText = "work frontend for kasa";
+                        } else {
+                            imgSrc = P7;
+                            altText = "work backend for mon vieux grimmoire";
+                        }
+                        return (
+                            <fig key={project.id}>
+                                <Link to={`/works/${project.id}`}>
+                                    <img src={imgSrc} alt={altText}></img>
+                                </Link>
+                                <figcaption>{project.title}</figcaption>
+                            </fig>
+                        );
+                    })}
+                </div>
+            </div>
+        </>
     )
 }
 

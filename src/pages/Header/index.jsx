@@ -26,7 +26,19 @@ function Header(){
                 </Link>
                 </div>         
                 <ul className="right">
-                    <li>
+                    {location.pathname === "/" && (
+                        <>
+                            <li>
+                                <button onClick={toggleTheme} className="liens-header">
+                                    {theme === 'light' ? <img src={MoonIcon} alt="Moon icon" title="dark theme" /> : <img src={SunIcon} alt="Sun icon" title="light theme" />}
+                                </button>
+                            </li>
+                            <li>
+                                <Link to="/" className="language" title="language: french">FR</Link>
+                            </li>
+                        </>
+                    )}
+                                        <li>
                         <Link to={location.pathname === "/menu" ? "/" : "/menu"} className="liens-header" title="menu">
                             <img 
                                 src={menuSrc} 
@@ -35,14 +47,6 @@ function Header(){
                                 alt="Menu" 
                             />
                         </Link>
-                    </li>
-                    <li>
-                        <button onClick={toggleTheme} className="liens-header">
-                            {theme === 'light' ? <img src={MoonIcon} alt="Moon icon" title="dark theme" /> : <img src={SunIcon} alt="Sun icon" title="light theme" />}
-                        </button>
-                    </li>
-                    <li>
-                        <Link to="/" className="language" title="language: french">FR</Link>
                     </li>
                 </ul>
             </nav>

@@ -22,6 +22,12 @@
 .app-content {
 	display: flex;
 	flex-direction: column;
+	height: 100vh;
+    overflow-y: auto;
+	&::-webkit-scrollbar{
+		display: none;
+	}
+	scrollbar-width: none;
 }
 
 body {
@@ -39,5 +45,6 @@ body {
 @import 'footer.scss';
 @import 'header.scss';
 @import 'home.scss';
+@import 'menu.scss';
 @import 'works.scss';
 @import 'project.scss';
