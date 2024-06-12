@@ -175,10 +175,6 @@
   flex-direction: column;
   height: 100vh;
   overflow-y: auto;
-  scrollbar-width: none;
-}
-.app-content::-webkit-scrollbar {
-  display: none;
 }
 
 body {
@@ -194,24 +190,20 @@ body {
 
 /* About */
 .about {
-  width: 100%;
+  width: 100vw;
   display: flex;
-  flex-direction: row;
-  gap: 20px;
+  gap: 5%;
+  height: 100vh;
 }
 .about img {
-  height: 30rem;
-  border-radius: 48px 0 0;
-  width: 40%;
+  border-radius: 0 48px 0 0;
+  width: 30%;
   object-position: 50% 170%;
   object-fit: cover;
   background-color: #ffb700;
   mix-blend-mode: luminosity;
 }
 .about .about-text p {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   margin: 48px 0;
 }
 
@@ -418,38 +410,6 @@ header .liens-header:hover {
   gap: 50px;
 }
 
-/*
-ul {
-    counter-reset: counter;
-    li{
-        counter-increment: counter;
-        list-style: none;
-        margin-left: -1.5rem;
-        position: relative;
-        overflow: hidden;
-        Link {
-            position: relative;
-            transform: translateY(100px);
-            &::before{
-                content: "0" counter(counter);
-                font-size: 1rem;
-                font-family: studiofeixen-writer,studiofeixen,Arial,Helvetica,sans-serif;
-                letter-spacing: -.1em;
-                margin-right: .5rem
-            }
-        }
-        h1{
-            text-transform: uppercase;
-            font-variation-settings: "wght" 800, "wdth" 125;
-            font-size: 4.5rem;
-            transition: .4s;   
-            &:hover{
-                font-variation-settings: "wght" 800,"wdth" 100
-            }
-        }
-    }
-}
-    */
 /*or?*/
 /*bleu turquoise*/
 /*light turquoise*/
@@ -459,20 +419,31 @@ ul {
 /* #ebe2cd; :clair sable*/
 /* #194058; :bleu plus clair que celui de backgound dark*/
 /* #0B0F2B; :bleu plus foncé*/
-.works div {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+.works-title {
+  margin: 0 0 60px;
 }
-.works div fig {
+
+.works {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  scrollbar-width: none;
+  gap: 20px;
+  width: 50vw;
+}
+.works figure {
   display: flex;
   align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: flex-start;
 }
-.works div img {
-  width: 20rem;
-  height: 100%;
-  margin: 20px;
+.works figure img {
+  width: 25rem;
   border-radius: 10% 1%;
+}
+.works::-webkit-scrollbar {
+  display: none;
 }
 
 /*or?*/

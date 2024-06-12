@@ -2,14 +2,14 @@
 
 /* About */
 .about {
-	width: 100%;
+	width: 100vw;
 	display: flex;
-	flex-direction: row;
-	gap: 20px;
+
+	gap: 5%;
+	height: 100vh;
 	img {
-	height: 30rem;
-    border-radius: 48px 0 0;
-    width: 40%;
+	border-radius: 0 48px 0 0;
+    width: 30%;
     object-position: 50% 170%;
     object-fit: cover;
     background-color: #ffb700;
@@ -17,9 +17,6 @@
 	}
 	.about-text {
 		p{
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
 			margin: 48px 0;
 		}
 	}

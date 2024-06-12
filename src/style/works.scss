@@ -1,20 +1,29 @@
 @import 'variable.scss';
 @import 'mixin.scss';
 
+.works-title{
+	margin: 0 0 60px;
+}
+
 .works {
-	div {
+	display: flex;
+	flex-direction: column;
+	figure{
 		display: flex;
-		justify-content: center;
-		flex-direction: column;
-		fig{
-			display: flex;
-			align-items: center;
-		}
+		align-items: center;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		align-items: flex-start;
 		img{
-			width: 20rem;
-			height: 100%;
-			margin: 20px;
+			width: 25rem;
 			border-radius: 10% 1%;
 		}
 	}
+	overflow-y: auto;
+	&::-webkit-scrollbar{
+		display: none;
+	}
+	scrollbar-width: none;
+	gap: 20px;
+	width: 50vw;
 }
