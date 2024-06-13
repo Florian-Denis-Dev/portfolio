@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import p3 from '../../assets/p3.png';
 import p6 from '../../assets/p6.png';
@@ -10,9 +10,14 @@ const images = {
   'p7.png': p7,
 };
 
-const ProjectDetail = ({ projects }) => {
+const ProjectDetail = ({ projects, setShowFooter }) => {
   const { id } = useParams();
   const project = projects.find((project) => project.id === id);
+
+  useEffect(() => {
+    setShowFooter(false); 
+    return () => setShowFooter(true);
+  }, [setShowFooter]); 
 
   return (
     <div className='project-info'>
@@ -23,7 +28,6 @@ const ProjectDetail = ({ projects }) => {
         <img key={index} src={images[imageName]} alt={`project ${id}`} />
       ))}
       <a href={project.sourceLink}>Link to the project</a>
-
     </div>
   );
 };

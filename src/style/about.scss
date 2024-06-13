@@ -3,19 +3,28 @@
 /* About */
 .about {
 	width: 100vw;
-	display: flex;
-
-	gap: 5%;
+	display: grid; 
+		grid-template-columns: 1fr 1fr 1fr; 
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-areas: 
+    		"picture text ."
+    		"picture text void"
+    		"picture text ."; 
+		gap: 5px 5px;
+	overflow-y: hidden;
 	height: 100vh;
 	img {
-	border-radius: 0 48px 0 0;
-    width: 30%;
-    object-position: 50% 170%;
-    object-fit: cover;
-    background-color: #ffb700;
-    mix-blend-mode: luminosity;
+		grid-area: picture;
+    	height: 100%;
+    	width: 90%;
+    	object-position: 50% 170%;
+    	object-fit: cover;
+    	background-color: #ffb700;
+    	mix-blend-mode: luminosity;
+		border-radius: 0 48px 0 0;
 	}
 	.about-text {
+		grid-area: text;
 		p{
 			margin: 48px 0;
 		}

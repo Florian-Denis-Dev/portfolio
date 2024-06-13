@@ -191,17 +191,26 @@ body {
 /* About */
 .about {
   width: 100vw;
-  display: flex;
-  gap: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "picture text ." "picture text void" "picture text .";
+  gap: 5px 5px;
+  overflow-y: hidden;
   height: 100vh;
 }
 .about img {
-  border-radius: 0 48px 0 0;
-  width: 30%;
+  grid-area: picture;
+  height: 100%;
+  width: 90%;
   object-position: 50% 170%;
   object-fit: cover;
   background-color: #ffb700;
   mix-blend-mode: luminosity;
+  border-radius: 0 48px 0 0;
+}
+.about .about-text {
+  grid-area: text;
 }
 .about .about-text p {
   margin: 48px 0;
@@ -285,7 +294,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
 }
 .footer p {
   margin: 0.5em 1.5em;
@@ -294,6 +303,107 @@ footer {
   .footer {
     margin-top: auto;
   }
+}
+
+.icons {
+  display: inline-flex;
+  margin: 2rem;
+}
+.icons a {
+  margin: 0 25px;
+  text-decoration: none;
+  display: block;
+  position: relative;
+}
+.icons a .layer {
+  width: 55px;
+  height: 55px;
+  transition: transform 0.3s;
+}
+.icons a .layer span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border: 1px solid;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.icons a .layer span.fab {
+  font-size: 30px;
+  line-height: 55px;
+  text-align: center;
+}
+.icons a:hover .layer {
+  transform: rotate(-35deg) skew(20deg);
+}
+.icons a:hover .layer span:nth-child(1) {
+  opacity: 0.2;
+}
+.icons a:hover .layer span:nth-child(2) {
+  opacity: 0.4;
+  transform: translate(5px, -5px);
+}
+.icons a:hover .layer span:nth-child(3) {
+  opacity: 0.6;
+  transform: translate(10px, -10px);
+}
+.icons a:hover .layer span:nth-child(4) {
+  opacity: 0.8;
+  transform: translate(15px, -15px);
+}
+.icons a:hover .layer span:nth-child(5) {
+  opacity: 1;
+  transform: translate(20px, -20px);
+}
+.icons a:nth-child(1) .layer span, .icons a:nth-child(1) .text {
+  color: aqua;
+  border-color: aqua;
+}
+.icons a:nth-child(2) .layer span, .icons a:nth-child(2) .text {
+  color: #1DA1F2;
+  border-color: #1DA1F2;
+}
+.icons a:nth-child(3) .layer span, .icons a:nth-child(3) .text {
+  color: #E1306C;
+  border-color: #E1306C;
+}
+.icons a:nth-child(4) .layer span, .icons a:nth-child(4) .text {
+  color: #2867B2;
+  border-color: #2867B2;
+}
+.icons a:nth-child(5) .layer span, .icons a:nth-child(5) .text {
+  color: #ff0000;
+  border-color: #ff0000;
+}
+.icons a:hover:nth-child(1) .layer span {
+  box-shadow: -1px 1px 3px aqua;
+}
+.icons a:hover:nth-child(2) .layer span {
+  box-shadow: -1px 1px 3px #1DA1F2;
+}
+.icons a:hover:nth-child(3) .layer span {
+  box-shadow: -1px 1px 3px #E1306C;
+}
+.icons a:hover:nth-child(4) .layer span {
+  box-shadow: -1px 1px 3px #2867B2;
+}
+.icons a:hover:nth-child(5) .layer span {
+  box-shadow: -1px 1px 3px #ff0000;
+}
+.icons a .text {
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  opacity: 0;
+  font-weight: 500;
+  transform: translateX(-50%);
+  transition: bottom 0.3s ease, opacity 0.3s ease;
+}
+.icons a:hover .text {
+  bottom: -35px;
+  opacity: 1;
 }
 
 /*or?*/
@@ -459,6 +569,104 @@ header .liens-header:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/*or?*/
+/*bleu turquoise*/
+/*light turquoise*/
+/*sable*/
+/* bleu foncé*/
+/* banque de couleur de couleurs*/
+/* #ebe2cd; :clair sable*/
+/* #194058; :bleu plus clair que celui de backgound dark*/
+/* #0B0F2B; :bleu plus foncé*/
+.contact {
+  border-radius: 8px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  background-color: white;
+  border-radius: 8px;
+  padding: 1rem;
+  /*button{
+
+  }*/
+}
+
+.input-field {
+  position: relative;
+  margin: 20px 0;
+}
+.input-field input {
+  width: 350px;
+  height: 60px;
+  border-radius: 6px;
+  font-size: 18px;
+  padding: 0 15px;
+  border: 2px solid beige;
+  background: white;
+  color: brown;
+  outline: none;
+}
+.input-field input:focus {
+  border: 2px solid black;
+}
+.input-field input:focus ~ label, .input-field input:valid ~ label {
+  top: 0;
+  left: 15px;
+  font-size: 16px;
+  padding: 0 2px;
+  background: white;
+}
+.input-field label {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: black;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.wrapper {
+  width: 470px;
+  margin: 1rem;
+  background: transparent;
+  border-radius: 5px;
+  padding: 25px 25px 30px;
+  box-shadow: 8px 8px 10px beige;
+}
+.wrapper h2 {
+  color: black;
+  font-size: 28px;
+}
+.wrapper textarea {
+  width: 100%;
+  resize: none;
+  height: 59px;
+  outline: none;
+  padding: 15px;
+  font-size: 16px;
+  margin-top: 20px;
+  border-radius: 5px;
+  max-height: 330px;
+  caret-color: blueviolet;
+  border: 1px solid green;
+}
+.wrapper textarea::placeholder {
+  color: brown;
+}
+.wrapper textarea:is(:focus, :valid) {
+  padding: 14px;
+  border: 2px solid blue;
+}
+.wrapper textarea::-webkit-scrollbar {
+  width: 0px;
 }
 
 /*# sourceMappingURL=index.css.map */

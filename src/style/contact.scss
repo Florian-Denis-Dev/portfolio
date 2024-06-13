@@ -1,0 +1,89 @@
+@import 'variable.scss';
+@import 'mixin.scss';
+
+.contact{
+    border-radius: 8px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    background-color: white;
+    border-radius: 8px;
+    padding: 1rem;
+    /*button{
+        
+    }*/
+}
+.input-field {
+    position: relative;
+    margin: 20px 0;
+    input {
+        width: 350px;
+        height: 60px;
+        border-radius: 6px;
+        font-size: 18px;
+        padding: 0 15px;
+        border: 2px solid beige;
+        background: white;
+        color: brown;
+        outline: none;
+        &:focus {
+            border: 2px solid black;
+            
+        }
+        &:focus ~ label, &:valid ~ label{
+            top: 0;
+            left: 15px;
+            font-size: 16px;
+            padding: 0 2px;
+            background: white;
+        }
+    }
+    label {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+        color: black;
+        pointer-events: none;
+        transition: 0.3s;
+    }
+}
+.wrapper {
+    width: 470px;
+    margin: 1rem;
+    background: transparent;
+    border-radius: 5px;
+    padding: 25px 25px 30px;
+    box-shadow: 8px 8px 10px beige;
+    h2 {
+        color: black;
+        font-size: 28px;
+    }
+    textarea {
+        width: 100%;
+        resize: none;
+        height: 59px;
+        outline: none;
+        padding: 15px;
+        font-size: 16px;
+        margin-top: 20px;
+        border-radius: 5px;
+        max-height: 330px;
+        caret-color: blueviolet;
+        border: 1px solid green;
+        &::placeholder{
+            color: brown;
+        }
+        &:is(:focus, :valid){
+            padding: 14px;
+            border: 2px solid blue;
+        }
+        &::-webkit-scrollbar{
+            width: 0px;
+        }
+    }
+}

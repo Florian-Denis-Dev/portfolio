@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, useState  } from 'react';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from './pages/Header/index.jsx';
 import Home from './pages/Home/index.jsx';
@@ -24,29 +24,30 @@ function App() {
 }
 
 function AppContent() {
-  const { theme } = useContext(ThemeContext)
+  const { theme } = useContext(ThemeContext);
+  const [showFooter, setShowFooter] = useState(true);
   useEffect(() => {
     document.body.className = theme;
   }, [theme]);
   return (
-  <>
-    <Header />
+    <>
+      <Header />
       <div className={`app-content ${theme}`}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path='/menu' element={<Menu/>} />
-          <Route path="/works/:id" element={<ProjectDetail projects={projectsData} />} />
-          <Route path="/works" element={<Works projects={projectsData} />} />
+          <Route path="/works/:id" element={<ProjectDetail projects={projectsData} setShowFooter={setShowFooter} />} />
+          <Route path="/works" element={<Works projects={projectsData} setShowFooter={setShowFooter} />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
           <Route path="*" element={<Error />} /> 
         </Routes>
         <div className='noise'></div>
       </div>
-    <Footer />
-  </>
+      {showFooter && <Footer />}
+    </>
   );
-  
 }
+
 
 export default App;
