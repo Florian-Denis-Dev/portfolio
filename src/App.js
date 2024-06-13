@@ -38,7 +38,7 @@ function AppContent() {
           <Route path='/menu' element={<Menu/>} />
           <Route path="/works/:id" element={<ProjectDetail projects={projectsData} setShowFooter={setShowFooter} />} />
           <Route path="/works" element={<Works projects={projectsData} setShowFooter={setShowFooter} />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/contact" element={<Contact setShowFooter={setShowFooter} />} />
           <Route path="/about" element={<About />} />
           <Route path="*" element={<Error />} /> 
         </Routes>

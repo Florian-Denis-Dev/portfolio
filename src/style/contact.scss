@@ -13,9 +13,91 @@ form{
     background-color: white;
     border-radius: 8px;
     padding: 1rem;
-    /*button{
-        
-    }*/
+    .wrap {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+      
+    button {
+        min-width: 350px;
+        min-height: 60px;
+        display: inline-flex;
+        font-family: 'Nunito', sans-serif;
+        font-size: 22px;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 1.3px;
+        font-weight: 700;
+        color: #313133;
+        background: #4FD1C5;
+        background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+        border: none;
+        border-radius: 8px;
+        box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+        transition: all 0.3s ease-in-out 0s;
+        cursor: pointer;
+        outline: none;
+        position: relative;
+        padding: 10px;
+        &::before {
+            content: '';
+            border-radius: 20px;
+            min-width: calc(350px + 12px);
+            min-height: calc(60px + 12px);
+            border: 6px solid #00FFCB;
+            box-shadow: 0 0 60px rgba(0,255,203,.64);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: all .3s ease-in-out 0s;
+        }
+        &:hover, 
+        &:focus {
+          color: #313133;
+          transform: translateY(-6px);
+        }
+        &:hover::before, 
+        &:focus::before {
+          opacity: 1;
+        }
+        &::after {
+            content: '';
+            width: 30px; height: 30px;
+            border-radius: 100%;
+            border: 6px solid #00FFCB;
+            position: absolute;
+            z-index: -1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: ring 2s infinite;
+            z-index: 1;
+        }
+        &:hover::after, 
+        &:focus::after {
+          animation: none;
+          display: none;
+        }
+    }
+    
+    @keyframes ring {
+        0% {
+            width: 15px;
+            height: 15px;
+            opacity: 1;
+        }
+        100% {
+            width: 150px;
+            height: 150px;
+            opacity: 0;
+        }
+    }
 }
 .input-field {
     position: relative;
@@ -26,9 +108,10 @@ form{
         border-radius: 6px;
         font-size: 18px;
         padding: 0 15px;
-        border: 2px solid beige;
+        border: 2px solid white;
+        box-shadow: 18px 18px 47px gainsboro, -18px -18px 47px white;
         background: white;
-        color: brown;
+        color: black;
         outline: none;
         &:focus {
             border: 2px solid black;
@@ -40,6 +123,7 @@ form{
             font-size: 16px;
             padding: 0 2px;
             background: white;
+            color: black;
         }
     }
     label {
@@ -47,21 +131,18 @@ form{
         top: 50%;
         left: 15px;
         transform: translateY(-50%);
-        color: black;
+        color: grey;
         pointer-events: none;
         transition: 0.3s;
     }
 }
 .wrapper {
-    width: 470px;
-    margin: 1rem;
+    width: 350px;
     background: transparent;
-    border-radius: 5px;
-    padding: 25px 25px 30px;
-    box-shadow: 8px 8px 10px beige;
+    margin-bottom: 5rem;
     h2 {
         color: black;
-        font-size: 28px;
+        font-size: 16px;
     }
     textarea {
         width: 100%;
@@ -73,17 +154,22 @@ form{
         margin-top: 20px;
         border-radius: 5px;
         max-height: 330px;
-        caret-color: blueviolet;
-        border: 1px solid green;
+        caret-color: grey;
+        border: 1px solid white;
+        box-shadow: 20px 20px 60px #d9d9d9;
         &::placeholder{
-            color: brown;
+            color: grey;
         }
         &:is(:focus, :valid){
             padding: 14px;
-            border: 2px solid blue;
+            border: 2px solid black;
         }
         &::-webkit-scrollbar{
             width: 0px;
         }
     }
 }
+
+/* button form*/
+
+

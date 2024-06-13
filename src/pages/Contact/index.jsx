@@ -1,9 +1,14 @@
 import React, { useState, useEffect } from 'react';
 
-function Contact(){
+function Contact({ setShowFooter }){
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+
+    useEffect(() => {
+        setShowFooter(false);
+        return () => setShowFooter(true);
+    }, [setShowFooter]);
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -26,11 +31,11 @@ function Contact(){
     return(
         <div className="contact">
             <div>
-                <h4>Contact me</h4>
-                <p>send me a mail:</p>
+                <h3>Contact</h3>
+                <p>You can send me a mail here</p>
             </div>
             <form onSubmit={handleSubmit}>
-            <div className='input-field'>
+                <div className='input-field'>
                     <input type="text" value={name} onChange={(e) => setName(e.target.value)} required spellCheck="false"/>
                         <label>
                             Enter your Name
@@ -43,12 +48,14 @@ function Contact(){
                         </label>
                 </div>
                 <div className='wrapper'>
-                    <h2>Your Message</h2>
+                    <h2>Message:</h2>
                     <textarea value={message} onChange={(e) => setMessage(e.target.value)} required spellCheck="false" placeholder='Type something here..'/>
                 </div>
-                <button type="submit">
-                    Send
-                </button>
+                <div className='wrap'>
+                    <button type="submit">
+                        Send
+                    </button>
+                </div>
             </form>
         </div>
     )
