@@ -7,7 +7,7 @@ import { useHeaderLogic } from '../../components/useHeaderLogic';
 import { useLocation } from "react-router-dom";
 
 function Header(){
-    const { theme, toggleTheme, logoSrc, setLogoHovered, menuSrc, handleMenuHover, handleMenuOut } = useHeaderLogic();
+    const { theme, toggleTheme, logoSrc, menuSrc, handleMenuHover, handleMenuOut } = useHeaderLogic();
     const location = useLocation();
 
     return(
@@ -18,8 +18,6 @@ function Header(){
                     <img 
                         id="logo" 
                         src={logoSrc} 
-                        onMouseOver={() => setLogoHovered(true)}
-                        onMouseOut={() => setLogoHovered(false)}
                         alt="logo du site"
                         title="home"
                     />

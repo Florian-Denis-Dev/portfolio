@@ -5,7 +5,7 @@ $color_light_grey: #cbcbcb;
 $color_dark_grey: #575757;
 $color_dark_blue: #0B0F2B;
 $color_light_blue: #3583b4;
-$color_blue: #194058;
+$color_blue: #194058; 
 $color_light: #f4d398; /*sable*/
 $color_link: #E7D1BB; 
 $color_dark: #0a1828; /* bleu foncé*/
@@ -14,9 +14,14 @@ $color_flash_gold:  #ffc941;
 $font-family_1: 'Montserrat', sans-serif;
 
 $background-color_darker: #023047;
+/* vraie couleur selectionnées: */
 $background-color_dark:#194058;
 $background-color_light: #E7D1BB;
-/* banque de couleur de couleurs*/
-/* #ebe2cd; :clair sable*/
-/* #194058; :bleu plus clair que celui de backgound dark*/
-/* #0B0F2B; :bleu plus foncé*/
+$background-color_lightgold: #E8CD72;
+$background-color_lightgolder:#E8BE72;
+$background-color_sea: #72E0E8;
+$background-color_darksea: #0D6A87;
+$background-color_darkersea: #07475A;
+/* vrai darkmode in preparation*/
+$background-color_darkmod-primaire:#0f0f0f;
+$background-color_darkmod-secondaire:#1a1a1a;

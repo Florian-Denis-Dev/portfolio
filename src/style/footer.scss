@@ -17,10 +17,10 @@ footer {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 1rem;
-	
+	padding: 1rem 0 0 0;
 	p {
-		margin: 0.5em 1.5em;
+		margin: 0.5em;
+		font-size: medium;
 	};
 	@media (max-width: 768px) {
 		margin-top: auto;
@@ -28,7 +28,7 @@ footer {
 }
 .icons {
 	display: inline-flex;
-	margin: 2rem;	  
+	margin: 1rem 0 0.5rem 0;	  
 	a {
 		margin: 0 25px;
 		text-decoration: none;
@@ -44,7 +44,7 @@ footer {
 				left: 0;
 				height: 100%;
 				width: 100%;
-				border: 1px solid;
+				border: 1px dashed;
 				border-radius: 5px;
 				transition: all 0.3s;
 				&.fab{
@@ -78,20 +78,20 @@ footer {
 		}
 		&:nth-child(1){
 			.layer span, .text{
-				color: aqua;
-				border-color: aqua;
+				color: $background-color_lightgold;
+				border-color: $background-color_lightgold;
 			}
 		}
 		&:nth-child(2){
 			.layer span, .text{
-				color: #1DA1F2;
-				border-color: #1DA1F2;
+				color: $background-color_sea;
+				border-color: $background-color_sea;
 			}
 		}
 		&:nth-child(3){
 			.layer span, .text{
-				color: #E1306C;
-				border-color: #E1306C;
+				color: $background-color_lightgold;
+				border-color: $background-color_lightgold;
 			}
 		} 
 		&:nth-child(4){
@@ -108,17 +108,17 @@ footer {
 		}
 		&:hover:nth-child(1){
 			.layer span{
-				box-shadow: -1px 1px 3px aqua;
+				box-shadow: -1px 1px 3px $background-color_lightgold;
 			}
 		}
 		&:hover:nth-child(2){
 			.layer span{
-				box-shadow: -1px 1px 3px #1DA1F2;
+				box-shadow: -1px 1px 3px $background-color_sea;
 			}
 		}
 		&:hover:nth-child(3){
 			.layer span{
-				box-shadow: -1px 1px 3px #E1306C;
+				box-shadow: -1px 1px 3px $background-color_lightgold;
 			}
 		}
 		&:hover:nth-child(4){

@@ -4,19 +4,15 @@
 /*light turquoise*/
 /*sable*/
 /* bleu foncé*/
-/* banque de couleur de couleurs*/
-/* #ebe2cd; :clair sable*/
-/* #194058; :bleu plus clair que celui de backgound dark*/
-/* #0B0F2B; :bleu plus foncé*/
+/* vraie couleur selectionnées: */
+/* vrai darkmode in preparation*/
 /*or?*/
 /*bleu turquoise*/
 /*light turquoise*/
 /*sable*/
 /* bleu foncé*/
-/* banque de couleur de couleurs*/
-/* #ebe2cd; :clair sable*/
-/* #194058; :bleu plus clair que celui de backgound dark*/
-/* #0B0F2B; :bleu plus foncé*/
+/* vraie couleur selectionnées: */
+/* vrai darkmode in preparation*/
 .light {
   background-color: #E7D1BB;
   color: #194058;
@@ -28,10 +24,41 @@
   color: #575757;
 }
 .light a {
+  color: #005e74;
   text-decoration-color: #005e74;
 }
 .light a:hover {
+  color: #575757;
   text-decoration-color: #575757;
+}
+.light .menu-link a {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  padding: 0 1px;
+  transition: color ease 0.3s;
+}
+.light .menu-link a::after {
+  content: "";
+  position: absolute;
+  width: 104%;
+  height: 5%;
+  left: -2%;
+  bottom: 0;
+  background-color: #005e74;
+  transition: all ease 0.3s;
+  z-index: 1;
+  border-radius: 8px;
+}
+.light .menu-link a h1 {
+  position: relative;
+  z-index: 2;
+}
+.light .menu-link a:hover {
+  color: #E7D1BB;
+}
+.light .menu-link a:hover::after {
+  height: 100%;
 }
 .light #logo {
   transition: filter 0.3s ease;
@@ -76,7 +103,7 @@
 
 .noise {
   position: fixed;
-  z-index: 9999;
+  z-index: 2;
   top: -300%;
   left: -150%;
   height: 600%;
@@ -221,10 +248,8 @@ body {
 /*light turquoise*/
 /*sable*/
 /* bleu foncé*/
-/* banque de couleur de couleurs*/
-/* #ebe2cd; :clair sable*/
-/* #194058; :bleu plus clair que celui de backgound dark*/
-/* #0B0F2B; :bleu plus foncé*/
+/* vraie couleur selectionnées: */
+/* vrai darkmode in preparation*/
 /* Error */
 .conteneur-error {
   display: flex;
@@ -272,10 +297,8 @@ body {
 /*light turquoise*/
 /*sable*/
 /* bleu foncé*/
-/* banque de couleur de couleurs*/
-/* #ebe2cd; :clair sable*/
-/* #194058; :bleu plus clair que celui de backgound dark*/
-/* #0B0F2B; :bleu plus foncé*/
+/* vraie couleur selectionnées: */
+/* vrai darkmode in preparation*/
 /* Footer */
 footer {
   width: 100%;
@@ -294,10 +317,11 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 1rem 0 0 0;
 }
 .footer p {
-  margin: 0.5em 1.5em;
+  margin: 0.5em;
+  font-size: medium;
 }
 @media (max-width: 768px) {
   .footer {
@@ -307,7 +331,7 @@ footer {
 
 .icons {
   display: inline-flex;
-  margin: 2rem;
+  margin: 1rem 0 0.5rem 0;
 }
 .icons a {
   margin: 0 25px;
@@ -326,7 +350,7 @@ footer {
   left: 0;
   height: 100%;
   width: 100%;
-  border: 1px solid;
+  border: 1px dashed;
   border-radius: 5px;
   transition: all 0.3s;
 }
@@ -358,16 +382,16 @@ footer {
   transform: translate(20px, -20px);
 }
 .icons a:nth-child(1) .layer span, .icons a:nth-child(1) .text {
-  color: aqua;
-  border-color: aqua;
+  color: #E8CD72;
+  border-color: #E8CD72;
 }
 .icons a:nth-child(2) .layer span, .icons a:nth-child(2) .text {
-  color: #1DA1F2;
-  border-color: #1DA1F2;
+  color: #72E0E8;
+  border-color: #72E0E8;
 }
 .icons a:nth-child(3) .layer span, .icons a:nth-child(3) .text {
-  color: #E1306C;
-  border-color: #E1306C;
+  color: #E8CD72;
+  border-color: #E8CD72;
 }
 .icons a:nth-child(4) .layer span, .icons a:nth-child(4) .text {
   color: #2867B2;
@@ -378,13 +402,13 @@ footer {
   border-color: #ff0000;
 }
 .icons a:hover:nth-child(1) .layer span {
-  box-shadow: -1px 1px 3px aqua;
+  box-shadow: -1px 1px 3px #E8CD72;
 }
 .icons a:hover:nth-child(2) .layer span {
-  box-shadow: -1px 1px 3px #1DA1F2;
+  box-shadow: -1px 1px 3px #72E0E8;
 }
 .icons a:hover:nth-child(3) .layer span {
-  box-shadow: -1px 1px 3px #E1306C;
+  box-shadow: -1px 1px 3px #E8CD72;
 }
 .icons a:hover:nth-child(4) .layer span {
   box-shadow: -1px 1px 3px #2867B2;
@@ -411,10 +435,8 @@ footer {
 /*light turquoise*/
 /*sable*/
 /* bleu foncé*/
-/* banque de couleur de couleurs*/
-/* #ebe2cd; :clair sable*/
-/* #194058; :bleu plus clair que celui de backgound dark*/
-/* #0B0F2B; :bleu plus foncé*/
+/* vraie couleur selectionnées: */
+/* vrai darkmode in preparation*/
 /* Header */
 header {
   padding: 60px 0 10px;
@@ -432,7 +454,7 @@ header nav {
   margin: 0 20px;
 }
 header nav .left img {
-  height: 120px;
+  height: 60px;
 }
 header button {
   background: none;
@@ -494,10 +516,8 @@ header .liens-header:hover {
 /*light turquoise*/
 /*sable*/
 /* bleu foncé*/
-/* banque de couleur de couleurs*/
-/* #ebe2cd; :clair sable*/
-/* #194058; :bleu plus clair que celui de backgound dark*/
-/* #0B0F2B; :bleu plus foncé*/
+/* vraie couleur selectionnées: */
+/* vrai darkmode in preparation*/
 /* Home */
 .Home {
   max-width: 1240px;
@@ -520,15 +540,22 @@ header .liens-header:hover {
   gap: 50px;
 }
 
+.menu-link {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+.menu-link a {
+  margin: 1rem;
+}
+
 /*or?*/
 /*bleu turquoise*/
 /*light turquoise*/
 /*sable*/
 /* bleu foncé*/
-/* banque de couleur de couleurs*/
-/* #ebe2cd; :clair sable*/
-/* #194058; :bleu plus clair que celui de backgound dark*/
-/* #0B0F2B; :bleu plus foncé*/
+/* vraie couleur selectionnées: */
+/* vrai darkmode in preparation*/
 .works-title {
   margin: 0 0 60px;
 }
@@ -561,10 +588,8 @@ header .liens-header:hover {
 /*light turquoise*/
 /*sable*/
 /* bleu foncé*/
-/* banque de couleur de couleurs*/
-/* #ebe2cd; :clair sable*/
-/* #194058; :bleu plus clair que celui de backgound dark*/
-/* #0B0F2B; :bleu plus foncé*/
+/* vraie couleur selectionnées: */
+/* vrai darkmode in preparation*/
 .project-info {
   display: flex;
   flex-direction: column;
@@ -576,14 +601,13 @@ header .liens-header:hover {
 /*light turquoise*/
 /*sable*/
 /* bleu foncé*/
-/* banque de couleur de couleurs*/
-/* #ebe2cd; :clair sable*/
-/* #194058; :bleu plus clair que celui de backgound dark*/
-/* #0B0F2B; :bleu plus foncé*/
+/* vraie couleur selectionnées: */
+/* vrai darkmode in preparation*/
 .contact {
   border-radius: 8px;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
+  z-index: 3;
 }
 
 form {

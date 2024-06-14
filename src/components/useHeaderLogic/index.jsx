@@ -2,7 +2,6 @@ import { useContext, useState, useEffect } from "react";
 import { ThemeContext } from '../../theme/ThemeContext';
 import { useLocation } from "react-router-dom";
 import logo from "../../assets/fd-blue.png";
-import logo2 from "../../assets/fd-colour.png";
 import logo3 from "../../assets/fd-sand.png";
 import menu1 from '../../assets/menu-on-light.png';
 import menu2 from '../../assets/menu-off-light.png';
@@ -16,7 +15,6 @@ export function useHeaderLogic() {
     const location = useLocation();
     const [logoSrc, setLogoSrc] = useState(logo);
     const [menuSrc, setMenuSrc] = useState(theme === 'light' ? menu2 : menuD2);
-    const [logoHovered, setLogoHovered] = useState(false);
     const isMenuPage = location.pathname === "/menu";
 
     useEffect(() => {
@@ -36,8 +34,8 @@ export function useHeaderLogic() {
     }, [theme, isMenuPage]);
 
     useEffect(() => {
-        setLogoSrc(logoHovered ? logo2 : theme === 'light' ? logo : logo3);
-    }, [theme, logoHovered]);
+        setLogoSrc(theme === 'light' ? logo : logo3);
+    }, [theme]);
 
     const handleMenuHover = () => {
         if (theme === 'dark') {
@@ -55,5 +53,5 @@ export function useHeaderLogic() {
         }
     }
 
-    return { theme, toggleTheme, logoSrc, setLogoHovered, menuSrc, handleMenuHover, handleMenuOut };
+    return { theme, toggleTheme, logoSrc, menuSrc, handleMenuHover, handleMenuOut };
 }

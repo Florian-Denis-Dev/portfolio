@@ -11,11 +11,49 @@
         }
 	}
     a {
+        color: $color_paragraph;
         text-decoration-color: $color_paragraph;
         &:hover{
+            color: $color_dark_grey;
             text-decoration-color: $color_dark_grey;
         }
     }
+    .menu-link {
+        a {
+            text-decoration: none;
+            position: relative;
+            display: inline-block;
+            padding: 0 1px;
+            transition: color ease 0.3s;
+    
+            &::after {
+                content: '';
+                position: absolute;
+                width: 104%;
+                height: 5%;
+                left: -2%;
+                bottom: 0;
+                background-color: $color_paragraph;
+                transition: all ease 0.3s;
+                z-index: 1;
+                border-radius: 8px ;
+            }
+    
+            h1 {
+                position: relative;
+                z-index: 2;
+            }
+    
+            &:hover {
+                color: $background-color_light;
+    
+                &::after {
+                    height: 100%;
+                }
+            }
+        }
+    }
+    
     #logo{
             transition: filter 0.3s ease;
             &:hover{
