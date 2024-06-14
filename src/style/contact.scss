@@ -6,12 +6,19 @@
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     z-index: 3;
+    .contact-title{
+        margin-bottom: 2rem;
+        h3{
+            margin-bottom: 1rem;
+        }
+    }
 }
 form{
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    background-color: white;
+    background-color: transparent;
+    border: 2px solid white;
     border-radius: 8px;
     padding: 1rem;
     .wrap {
@@ -33,12 +40,12 @@ form{
         text-align: center;
         letter-spacing: 1.3px;
         font-weight: 700;
-        color: #313133;
-        background: #4FD1C5;
-        background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+        color: white;
+        background: $background-color_sea;
+        background: linear-gradient(90deg, $background-color_darkersea 0%, $background-color_darksea 100%);
         border: none;
         border-radius: 8px;
-        box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+        box-shadow: 2px 2px 4px $background-color_darksea;
         transition: all 0.3s ease-in-out 0s;
         cursor: pointer;
         outline: none;
@@ -46,11 +53,10 @@ form{
         padding: 10px;
         &::before {
             content: '';
-            border-radius: 20px;
+            border-radius: 12px;
             min-width: calc(350px + 12px);
             min-height: calc(60px + 12px);
-            border: 6px solid #00FFCB;
-            box-shadow: 0 0 60px rgba(0,255,203,.64);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.64);
             position: absolute;
             top: 50%;
             left: 50%;
@@ -60,7 +66,7 @@ form{
         }
         &:hover, 
         &:focus {
-          color: #313133;
+            background: linear-gradient(90deg, $background-color_darksea 0%, $background-color_darkersea 100%);
           transform: translateY(-6px);
         }
         &:hover::before, 
@@ -69,15 +75,15 @@ form{
         }
         &::after {
             content: '';
-            width: 30px; height: 30px;
+            width: 100px; height: 100px;
             border-radius: 100%;
-            border: 6px solid #00FFCB;
+            border: 2px solid $background-color_darksea;
             position: absolute;
             z-index: -1;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            animation: ring 2s infinite;
+            animation: ring 2.5s infinite;
             z-index: 1;
         }
         &:hover::after, 
@@ -109,22 +115,23 @@ form{
         border-radius: 6px;
         font-size: 18px;
         padding: 0 15px;
-        border: 2px solid white;
-        box-shadow: 18px 18px 47px gainsboro, -18px -18px 47px white;
-        background: white;
-        color: black;
+        border: 2px solid transparent;
+        box-shadow: 2px 2px 10px gainsboro, -2px -2px 10px white;
+        background: transparent;
+        color: $background-color_dark;
         outline: none;
         &:focus {
-            border: 2px solid black;
+            border: 2px solid transparent;
             
         }
         &:focus ~ label, &:valid ~ label{
             top: 0;
             left: 15px;
             font-size: 16px;
-            padding: 0 2px;
-            background: white;
-            color: black;
+            padding: 0 5px;
+            background: $background-color_light;
+            color: grey;
+            box-shadow: 20px 20px 100px transparent;
         }
     }
     label {
@@ -140,9 +147,9 @@ form{
 .wrapper {
     width: 350px;
     background: transparent;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     h2 {
-        color: black;
+        color: $background-color_dark;
         font-size: 16px;
     }
     textarea {
@@ -163,14 +170,10 @@ form{
         }
         &:is(:focus, :valid){
             padding: 14px;
-            border: 2px solid black;
+            border: 2px solid white;
         }
         &::-webkit-scrollbar{
             width: 0px;
         }
     }
 }
-
-/* button form*/
-
-

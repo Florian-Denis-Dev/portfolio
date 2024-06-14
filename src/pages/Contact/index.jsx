@@ -30,9 +30,9 @@ function Contact({ setShowFooter }){
 
     return(
         <div className="contact">
-            <div>
+            <div className='contact-title'>
                 <h3>Contact</h3>
-                <p>You can send me a mail here</p>
+                <p>You can send me a mail here:</p>
             </div>
             <form onSubmit={handleSubmit}>
                 <div className='input-field'>
@@ -49,7 +49,7 @@ function Contact({ setShowFooter }){
                 </div>
                 <div className='wrapper'>
                     <h2>Message:</h2>
-                    <textarea value={message} onChange={(e) => setMessage(e.target.value)} required spellCheck="false" placeholder='Type something here..'/>
+                    <textarea value={message} onChange={(e) => setMessage(e.target.value)} required spellCheck="false" placeholder='And you can type something here..'/>
                 </div>
                 <div className='wrap'>
                     <button type="submit">
