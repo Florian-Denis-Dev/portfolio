@@ -200,8 +200,8 @@
 .app-content {
   display: flex;
   flex-direction: column;
-  height: 100vh;
   overflow-y: auto;
+  overflow-x: auto;
 }
 
 body {
@@ -566,7 +566,7 @@ header .liens-header:hover {
   overflow-y: auto;
   scrollbar-width: none;
   gap: 20px;
-  width: 50vw;
+  min-width: 50vw;
 }
 .works figure {
   display: flex;
@@ -590,10 +590,35 @@ header .liens-header:hover {
 /* bleu foncé*/
 /* vraie couleur selectionnées: */
 /* vrai darkmode in preparation*/
-.project-info {
+.project {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  gap: 20px;
+  overflow: auto;
+  width: 100vw;
+}
+.project .project-info {
+  margin: 1rem;
+}
+
+.image-container {
+  position: relative;
+}
+
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.gallery {
+  display: flex;
+  overflow-x: hidden;
+}
+.gallery img {
+  height: 80vh;
 }
 
 /*or?*/

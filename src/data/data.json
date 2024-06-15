@@ -5,7 +5,7 @@
 	  "description": "A frontend work for the website of a great architecte: Sophie Bluel",
 	  "technologies": ["html", "CSS", "JavaScript"],
 	  "sourceLink": "https://github.com/user/projet1",
-	  "images": ["p3.png"]
+	  "images": ["p3.png", "p6.png", "p7.png"]
 	},
 	{
 	  "id": "project2",

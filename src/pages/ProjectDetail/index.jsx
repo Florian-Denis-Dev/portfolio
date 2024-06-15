@@ -10,24 +10,49 @@ const images = {
   'p7.png': p7,
 };
 
-const ProjectDetail = ({ projects, setShowFooter }) => {
+const ProjectDetail = ({ projects, setShowFooter, theme}) => {
   const { id } = useParams();
   const project = projects.find((project) => project.id === id);
 
   useEffect(() => {
     setShowFooter(false); 
-    return () => setShowFooter(true);
+    let container = document.querySelector('.gallery');
+    
+    const handleScroll = function(e) {
+      if (e.deltaY !== 0) {
+        e.preventDefault();
+        container.scrollLeft += e.deltaY;
+      }
+    };
+  
+    if (container) {
+      container.addEventListener('wheel', handleScroll);
+    }
+    
+    return () => {
+      setShowFooter(true);
+      if (container) {
+        container.removeEventListener('wheel', handleScroll);
+      }
+    };
   }, [setShowFooter]); 
+  
 
   return (
-    <div className='project-info'>
-      <h2>{project.title}</h2>
-      <p>{project.description}</p>
-      <p>{project.technologies}</p>
-      {project.images.map((imageName, index) => (
-        <img key={index} src={images[imageName]} alt={`project ${id}`} />
-      ))}
-      <a href={project.sourceLink}>Link to the project</a>
+    <div className='project'>
+      <div className='project-info' >
+        <h2>{project.title}</h2>
+        <p>{project.description}</p>
+        <p>{project.technologies}</p>
+        <a href={project.sourceLink}>Link to the project</a>
+      </div>
+      <div className='gallery'>
+        {project.images.map((imageName, index) => (
+          <div key={index} className={`image-container ${theme === 'dark' ? 'dark-overlay' : ''}`}>
+            <img src={images[imageName]} alt={`project ${id}`} />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
