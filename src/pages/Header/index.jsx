@@ -1,15 +1,17 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 import "../../style/index.css";
 import SunIcon from '../../assets/sun.png'; 
 import MoonIcon from '../../assets/moon.png'; 
 import { useHeaderLogic } from '../../components/useHeaderLogic';
-import { useLocation } from "react-router-dom";
+
 
 function Header(){
+    const [logoTitle, setLogoTitle] = useState('home');
     const { theme, toggleTheme, logoSrc, menuSrc, handleMenuHover, handleMenuOut } = useHeaderLogic();
     const location = useLocation();
+    const navigate = useNavigate();
     const { i18n, t } = useTranslation();
     const currentLanguage = i18n.language;
   
@@ -17,19 +19,29 @@ function Header(){
       i18n.changeLanguage(language);
     };
 
+    const handleLogoClick = () => {
+        if (location.pathname !== "/") {
+            navigate(-1); // Revenir à la page précédente si pas sur la page d'accueil
+            setLogoTitle('return'); // Mettre à jour le title pour 'return'
+        } else {
+            navigate('/'); // Reste sur la page d'accueil si déjà sur la page d'accueil
+            setLogoTitle('home'); // Mettre à jour le title pour 'home'
+        }
+    };
+
     return(
         <header className={`header ${theme}`}> 
             <nav>
-                <div className="left">
-                <Link to="/">
-                    <img 
-                        id="logo" 
-                        src={logoSrc} 
-                        alt={t('home_alt')} 
-                        title={t('home_logo')}
-                    />
-                </Link>
-                </div>         
+            <div className="left">
+            <button onClick={handleLogoClick} className="logo-button">
+                        <img 
+                            id="logo" 
+                            src={logoSrc} 
+                            alt={t('home_alt')} 
+                            title={t(`home_logo_${logoTitle}`)} // Utilisation de la variable d'état pour le title
+                        />
+                    </button>
+                </div>          
                 <ul className="right">
                     {location.pathname === "/" && (
                         <>

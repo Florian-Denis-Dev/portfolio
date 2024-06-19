@@ -1,7 +1,8 @@
 {
     "key_fr" : "fr",
     "home_alt": "Site logo",
-    "home_logo": "Home",
+    "home_logo_home": "Home",
+    "home_logo_return": "Return",
     "dark_theme": "Dark theme",
     "light_theme": "Light theme",
     "menu_alt": "Menu",

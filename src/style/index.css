@@ -459,6 +459,7 @@ header nav .left img {
 header button {
   background: none;
   border: none;
+  cursor: pointer;
 }
 header nav img {
   height: 38px;
