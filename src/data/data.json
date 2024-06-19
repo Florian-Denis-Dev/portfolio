@@ -1,26 +1,29 @@
 [
 	{
 	  "id": "project1",
-	  "title": "Sophie bluel",
-	  "description": "A frontend work for the website of a great architecte: Sophie Bluel",
+	  "title_key": "project1_title",
+	  "skill_key": "project1_skill",
+      "description_key": "project1_description",
 	  "technologies": ["html", "CSS", "JavaScript"],
 	  "sourceLink": "https://github.com/user/projet1",
 	  "images": ["p3.png", "p6.png", "p7.png"]
 	},
 	{
 	  "id": "project2",
-	  "title": "Kasa",
-	  "description": "A frontend and backend works for the website kasa",
+	  "title_key": "project2_title",
+	  "skill_key": "project2_skill",
+	  "description_key": "project2_description",
 	  "technologies": ["react", "scss", "javascript"],
 	  "sourceLink": "https://github.com/user/projet2",
 	  "images": ["p6.png"]
 	},
 	{
 		"id": "project3",
-		"title": "Mon vieux grimmoire",
-		"description": "Description du projet 3...",
+		"title_key": "project3_title",
+		"skill_key": "project3_skill",
+		"description_key": "project3_description",
 		"technologies": ["Node.js", "Express", "MongoDB"],
 		"sourceLink": "https://github.com/user/projet3",
 		"images": ["p7.png"]
 	  }
-  ]
+  ]  

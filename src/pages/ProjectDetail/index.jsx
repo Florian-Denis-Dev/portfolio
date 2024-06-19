@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import p3 from '../../assets/p3.png';
 import p6 from '../../assets/p6.png';
 import p7 from '../../assets/p7.png';
@@ -12,6 +13,7 @@ const images = {
 
 const ProjectDetail = ({ projects, setShowFooter, theme}) => {
   const { id } = useParams();
+  const { t } = useTranslation();
   const project = projects.find((project) => project.id === id);
 
   useEffect(() => {
@@ -41,10 +43,11 @@ const ProjectDetail = ({ projects, setShowFooter, theme}) => {
   return (
     <div className='project'>
       <div className='project-info' >
-        <h2>{project.title}</h2>
-        <p>{project.description}</p>
-        <p>{project.technologies}</p>
-        <a href={project.sourceLink}>Link to the project</a>
+        <h2>{t(project.title_key)}</h2>
+        <h3>{t(project.skill_key)}</h3>
+        <p>{t(project.description_key)}</p>
+        <p>{project.technologies.join(', ')}</p>
+        <a href={project.sourceLink}>{t('link_to_project')}</a>
       </div>
       <div className='gallery'>
         {project.images.map((imageName, index) => (

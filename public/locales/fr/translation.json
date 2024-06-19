@@ -31,5 +31,19 @@
     "contact_send_button": "Envoyer",
     "contact_subject": "Message de {{name}} ({{email}})",
 
-    "footer_message": "© 2024 Florian Denis. Tout droits réservés"
+    "footer_message": "© 2024 Florian Denis. Tout droits réservés",
+
+    "works_title": "Projets:",
+
+    "project1_title": "Sophie Bluel",
+    "project1_skill": "Développement web via Javascript",
+    "project1_description": "Récupération des données utilisateurs dans le javascript via des formulaires, manipulation des éléments du DOM via JS, Gestion des évenements utilisateurs via JS.",
+
+    "project2-title": "Kasa",
+    "project2_skill": "React",
+    "project2_description": "Initialisation d'une application avec Create react app, Configuration d'une navigation entre les pages avec React router, Développement d'élément de l'interface d'un site web via les composants de React.",
+
+    "project3-title": "Mon vieux grimmoire",
+    "project3_skill":"Développement back-end avec NodeJS",
+    "project3_description":"Implémentation d'un modèle logique de données conformément à la réglementation, Mise en oeuvre des opérations CRUD de manière sécurisée, Stockage des données de manière sécurisée."
 }
