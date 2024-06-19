@@ -1,0 +1,35 @@
+{
+    "key_en": "en",
+    "home_alt": "Logo du site",
+    "home_logo": "Accueil",
+    "dark_theme": "Thème sombre",
+    "light_theme": "Thème clair",
+    "menu_alt": "Menu",
+
+    "home_title": "HEY, JE SUIS FLORIAN DENIS",
+    "home_greeting": "Ravi de t'accueillir ici !",
+    "home_description": "Je suis développeur web & graphiste",
+    "home_works_cta": "Mes projects",
+    "home_about_cta": "Qui suis-je?",
+
+    "menu_home": "Accueil",
+    "menu_works": "Projets",
+    "menu_about": "À propos",
+    "menu_contact": "Contact",
+
+    "about_alt": "Florian",
+    "about_heading": "À propos",
+    "about_content": "Salut, je suis Florian DENIS, un développeur web français, passionné par les nouvelles technologies, comme les blockchains et l'IA, et j'espère pouvoir contribuer à aider les entreprises et les gens.",
+    "about_resume_cta": "Mon CV",
+
+    "contact_heading": "Contact",
+    "contact_instruction": "Vous pouvez m'envoyer un mail ici :",
+    "contact_name_label": "Entrez votre nom",
+    "contact_email_label": "Votre email",
+    "contact_message_label": "Message",
+    "contact_message_placeholder": "Et vous pouvez écrire là..",
+    "contact_send_button": "Envoyer",
+    "contact_subject": "Message de {{name}} ({{email}})",
+
+    "footer_message": "© 2024 Florian Denis. Tout droits réservés"
+}

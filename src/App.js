@@ -1,5 +1,7 @@
 import React, { useContext, useEffect, useState  } from 'react';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
+import './i18n/i18n.js';
 import Header from './pages/Header/index.jsx';
 import Home from './pages/Home/index.jsx';
 import Footer from './pages/Footer/index.jsx';
@@ -26,25 +28,26 @@ function App() {
 function AppContent() {
   const { theme } = useContext(ThemeContext);
   const [showFooter, setShowFooter] = useState(true);
+  const { t } = useTranslation();
   useEffect(() => {
     document.body.className = theme;
   }, [theme]);
   return (
     <>
-      <Header />
+      <Header t={t}/>
       <div className={`app-content ${theme}`}>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path='/menu' element={<Menu/>} />
-          <Route path="/works/:id" element={<ProjectDetail projects={projectsData} setShowFooter={setShowFooter} />} />
-          <Route path="/works" element={<Works projects={projectsData} setShowFooter={setShowFooter} />} />
-          <Route path="/contact" element={<Contact setShowFooter={setShowFooter} />} />
-          <Route path="/about" element={<About />} />
-          <Route path="*" element={<Error />} /> 
+          <Route path="/" element={<Home  t={t} />} />
+          <Route path='/menu' element={<Menu t={t} />} />
+          <Route path="/works/:id" element={<ProjectDetail projects={projectsData} setShowFooter={setShowFooter}  t={t} />} />
+          <Route path="/works" element={<Works projects={projectsData} setShowFooter={setShowFooter}  t={t} />} />
+          <Route path="/contact" element={<Contact setShowFooter={setShowFooter}  t={t} />} />
+          <Route path="/about" element={<About  t={t} />} />
+          <Route path="*" element={<Error  t={t} />} /> 
         </Routes>
         <div className='noise'></div>
       </div>
-      {showFooter && <Footer />}
+      {showFooter && <Footer t={t}/>}
     </>
   );
 }

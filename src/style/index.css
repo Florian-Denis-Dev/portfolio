@@ -480,6 +480,14 @@ header ul {
     gap: 1rem;
   }
 }
+header ul .lang {
+  margin: 5px;
+  font-size: larger;
+  min-width: 50px;
+}
+header ul .lang:hover {
+  cursor: pointer;
+}
 header a {
   text-decoration: none;
 }
@@ -633,6 +641,7 @@ header .liens-header:hover {
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   z-index: 3;
+  overflow: hidden;
 }
 .contact .contact-title {
   margin-bottom: 2rem;
@@ -712,7 +721,6 @@ form button::after {
   left: 50%;
   transform: translate(-50%, -50%);
   animation: ring 2.5s infinite;
-  z-index: 1;
 }
 form button:hover::after, form button:focus::after {
   animation: none;

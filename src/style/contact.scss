@@ -6,6 +6,7 @@
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     z-index: 3;
+    overflow: hidden;
     .contact-title{
         margin-bottom: 2rem;
         h3{
@@ -84,7 +85,6 @@ form{
             left: 50%;
             transform: translate(-50%, -50%);
             animation: ring 2.5s infinite;
-            z-index: 1;
         }
         &:hover::after, 
         &:focus::after {

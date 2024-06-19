@@ -1,28 +1,29 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 
 function Home(){
+    const { t } = useTranslation();
     return(
         <>
         <div className="Home">
             <div className="intro">
-                <h1>HI, I'M FLORIAN DENIS</h1>
+                <h1>{t('home_title')}</h1>
                 <h2>
-                    It's nice to see you here!
+                    {t('home_greeting')}
                 </h2>
                 <h2>
-                    I'm a web developper, <br></br>
-                    & a graphic designer 
+                    {t('home_description')}
                 </h2>
                 <ul className="Home-link">
                     <li>
                         <Link to="/works" >
-                            <h3>See my works</h3>
+                            <h3>{t('home_works_cta')}</h3>
                         </Link>
                     </li>
                     <li>
                         <Link to="/about" >
-                            <h3>more about me</h3>
+                            <h3>{t('home_about_cta')}</h3>
                         </Link>
                     </li>
                 </ul>

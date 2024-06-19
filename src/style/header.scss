@@ -41,6 +41,14 @@ header {
 		@include respond(small) {
 			gap: 1rem;
 		}
+		.lang{
+			margin: 5px;
+			font-size: larger;
+			min-width: 50px;
+			&:hover{
+				cursor: pointer;
+			}
+		}
 	}
 	
 	a {

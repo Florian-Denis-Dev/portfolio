@@ -1,20 +1,20 @@
 import React from "react";
+import { useTranslation } from 'react-i18next';
 import me from '../../assets/FD.webp';
 import cv from '../../assets/cv.pdf';
 
-function About(){
+function About() {
+    const { t } = useTranslation();
+
     return(
         <div className="about">
-            <img src={me} alt="Florian"></img> 
+            <img src={me} alt={t('about_alt')}></img> 
             <div className="about-text">
-                <h3>About</h3>
+                <h3>{t('about_heading')}</h3>
                 <p>
-                    Hi, i'm Florian DENIS, a french web developper, <br></br>
-                    passionated by the newest technologies, <br></br>
-                    like the blockchains and ai, <br></br>
-                    and i hope i could contribute to help company and peoples.
+                    {t('about_content')}
                 </p>
-                <a href={cv} target="_blank" rel="noopener noreferrer">My resume</a>
+                <a href={cv} target="_blank" rel="noopener noreferrer">{t('about_resume_cta')}</a>
             </div>
         </div>
     )

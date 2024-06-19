@@ -1,12 +1,13 @@
 import React, { useContext, useState } from "react";
 import "../../style/index.css";
 import { ThemeContext } from '../../theme/ThemeContext';
+import { useTranslation } from 'react-i18next';
 
 
 function Footer(){
     const { theme } = useContext(ThemeContext); 
     const [isHovered, setIsHovered] = useState(false);
-
+    const { t } = useTranslation();
     const footerTheme = theme === 'light' ? 'dark' : 'light'; 
 
     return(
@@ -55,7 +56,7 @@ function Footer(){
                     </div>
                 </a>
             </div>
-            <p style={{visibility: isHovered ? 'hidden' : 'visible'}}>© 2024 Florian Denis. All rights reserved</p>
+            <p style={{visibility: isHovered ? 'hidden' : 'visible'}}>{t('footer_message')}</p>
         </footer>
     )
 }

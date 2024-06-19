@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 import "../../style/index.css";
 import SunIcon from '../../assets/sun.png'; 
 import MoonIcon from '../../assets/moon.png'; 
@@ -9,6 +10,12 @@ import { useLocation } from "react-router-dom";
 function Header(){
     const { theme, toggleTheme, logoSrc, menuSrc, handleMenuHover, handleMenuOut } = useHeaderLogic();
     const location = useLocation();
+    const { i18n, t } = useTranslation();
+    const currentLanguage = i18n.language;
+  
+    const changeLanguage = (language) => {
+      i18n.changeLanguage(language);
+    };
 
     return(
         <header className={`header ${theme}`}> 
@@ -18,8 +25,8 @@ function Header(){
                     <img 
                         id="logo" 
                         src={logoSrc} 
-                        alt="logo du site"
-                        title="home"
+                        alt={t('home_alt')} 
+                        title={t('home_logo')}
                     />
                 </Link>
                 </div>         
@@ -28,15 +35,24 @@ function Header(){
                         <>
                             <li>
                                 <button onClick={toggleTheme} className="liens-header">
-                                    {theme === 'light' ? <img src={MoonIcon} alt="Moon icon" title="dark theme" /> : <img src={SunIcon} alt="Sun icon" title="light theme" />}
+                                    {theme === 'light' ? <img src={MoonIcon} alt={t('dark_theme')} title={t('dark_theme')} /> : <img src={SunIcon} alt={t('light_theme')} title={t('light_theme')} />}
                                 </button>
                             </li>
                             <li>
-                                <Link to="/" className="language" title="language: french">FR</Link>
+                                {currentLanguage === 'en' && (
+                                    <button className="lang" onClick={() => changeLanguage('fr')}>
+                                        {t('key_fr')}
+                                    </button>
+                                )}
+                                {currentLanguage === 'fr' && (
+                                    <button className="lang" onClick={() => changeLanguage('en')}>
+                                        {t('key_en')}
+                                    </button>
+                                )}
                             </li>
                         </>
                     )}
-                                        <li>
+                        <li>
                         <Link to={location.pathname === "/menu" ? "/" : "/menu"} className="liens-header" title="menu">
                             <img 
                                 src={menuSrc} 
