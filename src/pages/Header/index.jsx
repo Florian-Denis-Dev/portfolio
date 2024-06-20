@@ -13,7 +13,7 @@ function Header(){
     const location = useLocation();
     const navigate = useNavigate();
     const { i18n, t } = useTranslation();
-    const currentLanguage = i18n.language;
+    const currentLanguage = i18n.resolvedLanguage;
   
     const changeLanguage = (language) => {
       i18n.changeLanguage(language);
@@ -21,11 +21,11 @@ function Header(){
 
     const handleLogoClick = () => {
         if (location.pathname !== "/") {
-            navigate(-1); // Revenir à la page précédente si pas sur la page d'accueil
-            setLogoTitle('return'); // Mettre à jour le title pour 'return'
+            navigate(-1);
+            setLogoTitle('return'); 
         } else {
-            navigate('/'); // Reste sur la page d'accueil si déjà sur la page d'accueil
-            setLogoTitle('home'); // Mettre à jour le title pour 'home'
+            navigate('/'); 
+            setLogoTitle('home'); 
         }
     };
 
@@ -38,7 +38,7 @@ function Header(){
                             id="logo" 
                             src={logoSrc} 
                             alt={t('home_alt')} 
-                            title={t(`home_logo_${logoTitle}`)} // Utilisation de la variable d'état pour le title
+                            title={t(`home_logo_${logoTitle}`)} 
                         />
                     </button>
                 </div>          

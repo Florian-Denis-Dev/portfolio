@@ -35,6 +35,7 @@
     "footer_message": "© 2024 Florian Denis. Tout droits réservés",
 
     "works_title": "Projets:",
+    "link_to_project": "GitHub du projet",
 
     "project1_title": "Sophie Bluel",
     "project1_skill": "Développement web via Javascript",
@@ -44,7 +45,7 @@
     "project2_skill": "React",
     "project2_description": "Initialisation d'une application avec Create react app, Configuration d'une navigation entre les pages avec React router, Développement d'élément de l'interface d'un site web via les composants de React.",
 
-    "project3-title": "Mon vieux grimmoire",
+    "project3_title": "Mon vieux grimmoire",
     "project3_skill":"Développement back-end avec NodeJS",
     "project3_description":"Implémentation d'un modèle logique de données conformément à la réglementation, Mise en oeuvre des opérations CRUD de manière sécurisée, Stockage des données de manière sécurisée."
 }

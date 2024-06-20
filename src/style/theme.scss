@@ -18,6 +18,9 @@
             text-decoration-color: $color_dark_grey;
         }
     }
+    button{
+        color: $background-color_darkersea;
+    }
     .menu-link {
         a {
             text-decoration: none;
@@ -80,18 +83,70 @@
         color: $color_paragraph_dark;
     }
     h3 {
-        color: $color_link;
+        color: $background-color_lightgold;
 	}
     a {
-        text-decoration-color: $color_paragraph_dark;
+        color: $background-color_lightgold;
+        text-decoration-color: $background-color_lightgolder;
+    }
+    button{
+        color: $background-color_sea;
     }
     footer {
         background-color: $background-color_darker;
+        p { 
+            color: $color_paragraph_dark;
+        }
     }
     .liens-header {
 		color: $color_paragraph_dark;
 		&:hover {
 			color: $color_flash_gold;
+        }
+    }
+    form {
+        border-color: $background-color_sea;
+        input {
+            box-shadow: 2px 2px 10px $background-color_sea, -2px -2px 10px $background-color_darksea;
+            color: $background-color_lightgold;
+            &:focus ~ label, &:valid ~ label{
+                background: $background-color_darkersea;
+                color: $background-color_lightgolder;
+            }
+        }
+        label {
+            color: aqua;
+        }
+        h2 {
+            color: aqua;
+        }
+        textarea {
+            caret-color: $background-color_lightgolder;
+            border: 1px solid $background-color_darksea;
+            box-shadow: 20px 20px 60px $background-color_darksea;
+            background: $background-color_darker;
+            color: $background-color_lightgold;
+            &::placeholder{
+                color: $background-color_sea;
+            }
+            &:is(:focus, :valid){
+                border: 2px solid $background-color_lightgold;
+            }
+        }
+        button {
+            color: $background-color_darker;
+            background: $background-color_lightgold;
+            background: linear-gradient(90deg, $background-color_lightgold 0%, $background-color_gold 100%);
+            box-shadow: 2px 2px 4px $background-color_gold;
+            &::before {
+                box-shadow: 0 0 20px $background-color_gold;
+            }
+            &:hover, &:focus {
+                background: linear-gradient(90deg, $background-color_gold 0%, $background-color_lightgold 100%);
+            }
+            &::after {
+                border: 2px solid $background-color_lightgolder;
+            }
         }
     }
 }
