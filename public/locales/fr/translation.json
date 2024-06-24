@@ -24,11 +24,10 @@
     "about_resume_cta": "Mon CV",
 
     "contact_heading": "Contact",
-    "contact_instruction": "Vous pouvez m'envoyer un mail ici :",
+    "contact_instruction": "Vous pouvez m'envoyer un mail là:",
     "contact_name_label": "Entrez votre nom",
     "contact_email_label": "Votre email",
-    "contact_message_label": "Message",
-    "contact_message_placeholder": "Et vous pouvez écrire là..",
+    "contact_message_placeholder": "écrivez votre message ici..",
     "contact_send_button": "Envoyer",
     "contact_subject": "Message de {{name}} ({{email}})",
 

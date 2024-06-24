@@ -6,6 +6,9 @@
     max-width: 1240px;
 	display: flex;
 	flex-direction: column;
+	@include respond(smaller) {
+		margin: 1rem;
+	}
 }
 
 .intro {
@@ -15,10 +18,16 @@
 		flex-direction: column;
 		align-items: center;
 	gap: 20px;
+	@include respond(smaller) {
+		align-items: flex-start;
+	}
 }
 
 .Home-link {
 	display: flex;
 		justify-content: space-around;
 	gap: 50px;
+	@include respond(smaller) {
+		flex-direction: column;;
+	}
 }

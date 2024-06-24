@@ -50,7 +50,6 @@ function Contact({ setShowFooter }) {
                     </label>
                 </div>
                 <div className='wrapper'>
-                    <h2>{t('contact_message_label')}:</h2>
                     <textarea value={message} onChange={(e) => setMessage(e.target.value)} required spellCheck="false" placeholder={t('contact_message_placeholder')}/>
                 </div>
                 <div className='wrap'>

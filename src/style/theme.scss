@@ -28,7 +28,6 @@
             display: inline-block;
             padding: 0 1px;
             transition: color ease 0.3s;
-    
             &::after {
                 content: '';
                 position: absolute;
@@ -41,15 +40,12 @@
                 z-index: 1;
                 border-radius: 8px ;
             }
-    
             h1 {
                 position: relative;
                 z-index: 2;
             }
-    
             &:hover {
                 color: $background-color_light;
-    
                 &::after {
                     height: 100%;
                 }
@@ -105,9 +101,9 @@
         }
     }
     form {
-        border-color: $background-color_sea;
+        border-color: $background-color_darksea;
         input {
-            box-shadow: 2px 2px 10px $background-color_sea, -2px -2px 10px $background-color_darksea;
+            box-shadow: 2px 2px 10px $background-color_darksea, -2px -2px 10px $background-color_darker;
             color: $background-color_lightgold;
             &:focus ~ label, &:valid ~ label{
                 background: $background-color_darkersea;
@@ -115,15 +111,12 @@
             }
         }
         label {
-            color: aqua;
-        }
-        h2 {
-            color: aqua;
+            color: $background-color_sea;
         }
         textarea {
             caret-color: $background-color_lightgolder;
-            border: 1px solid $background-color_darksea;
-            box-shadow: 20px 20px 60px $background-color_darksea;
+            border: 1px solid $background-color_darker;
+            box-shadow: 2px 2px 10px $background-color_darksea, -2px -2px 10px $background-color_darker;
             background: $background-color_darker;
             color: $background-color_lightgold;
             &::placeholder{
@@ -146,6 +139,39 @@
             }
             &::after {
                 border: 2px solid $background-color_lightgolder;
+            }
+        }
+    }
+    .menu-link {
+        a {
+            text-decoration: none;
+            position: relative;
+            display: inline-block;
+            padding: 0 1px;
+            transition: color ease 0.3s;
+            &::after {
+                content: '';
+                position: absolute;
+                width: 104%;
+                height: 5%;
+                left: -2%;
+                bottom: 0;
+                background-color: $background-color_lightgold;
+                transition: all ease 0.3s;
+                z-index: 1;
+                border-radius: 8px ;
+            }
+            h1 {
+                position: relative;
+                z-index: 2;
+                &:hover{
+                    color: $background-color_darkersea;
+                }
+            }
+            &:hover {
+                &::after {
+                    height: 100%;
+                }
             }
         }
     }

@@ -7,9 +7,6 @@ footer {
 	background-color: $background-color_light;
 	margin-top: auto;	
 	box-sizing: border-box;
-	@media (max-width: 768px) {
-		min-height: 40vh;
-	}
 }
 
 .footer {
@@ -26,6 +23,7 @@ footer {
 		margin-top: auto;
 	}
 }
+
 .icons {
 	display: inline-flex;
 	margin: 1rem 0 0.5rem 0;	  

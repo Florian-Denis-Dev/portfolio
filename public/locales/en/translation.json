@@ -27,8 +27,7 @@
     "contact_instruction": "You can send me a mail here:",
     "contact_name_label": "Enter your Name",
     "contact_email_label": "Your Email",
-    "contact_message_label": "Message",
-    "contact_message_placeholder": "And you can type something here..",
+    "contact_message_placeholder": "And you can type your message..",
     "contact_send_button": "Send",
     "contact_subject": "Message from {{name}} ({{email}})",
 
