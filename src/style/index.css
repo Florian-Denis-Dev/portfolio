@@ -322,11 +322,37 @@ body {
   mix-blend-mode: luminosity;
   border-radius: 0 48px 0 0;
 }
+@media (max-width: 425px) {
+  .about img {
+    width: 90%;
+    object-position: 40%;
+  }
+}
 .about .about-text {
   grid-area: text;
 }
+@media (max-width: 425px) {
+  .about .about-text h3, .about .about-text a {
+    font-size: 2em;
+  }
+}
+@media (max-width: 768px) {
+  .about .about-text h3, .about .about-text a {
+    font-size: 1.6em;
+  }
+}
 .about .about-text p {
   margin: 48px 0;
+}
+@media (max-width: 768px) {
+  .about .about-text p {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 425px) {
+  .about .about-text p {
+    font-size: 1.5em;
+  }
 }
 
 /*or?*/
@@ -425,6 +451,12 @@ footer {
   height: 55px;
   transition: transform 0.3s;
 }
+@media (max-width: 375px) {
+  .icons a .layer {
+    width: 45px;
+    height: 45px;
+  }
+}
 .icons a .layer span {
   position: absolute;
   top: 0;
@@ -439,6 +471,11 @@ footer {
   font-size: 30px;
   line-height: 55px;
   text-align: center;
+}
+@media (max-width: 375px) {
+  .icons a .layer span {
+    border: unset;
+  }
 }
 .icons a:hover .layer {
   transform: rotate(-35deg) skew(20deg);
@@ -667,6 +704,16 @@ header .liens-header:hover {
 }
 .menu-link a {
   margin: 1rem;
+}
+@media (max-width: 768px) {
+  .menu-link {
+    font-size: x-large;
+  }
+}
+@media (max-width: 425px) {
+  .menu-link {
+    margin-top: 10vh;
+  }
 }
 
 /*or?*/

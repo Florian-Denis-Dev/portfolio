@@ -36,6 +36,10 @@ footer {
 			width: 55px;
 			height: 55px;
 			transition: transform 0.3s;
+			@include respond (small) {
+				width: 45px;
+				height: 45px;
+			}
 			span{
 				position: absolute;
 				top: 0;
@@ -49,6 +53,9 @@ footer {
 					font-size: 30px;
 					line-height: 55px;
 					text-align: center;
+				}
+				@include respond (small) {
+					border: unset;
 				}
 			}
 		}

@@ -22,11 +22,29 @@
     	background-color: #ffb700;
     	mix-blend-mode: luminosity;
 		border-radius: 0 48px 0 0;
+		@include respond (smaller) {
+			width: 90%;
+    		object-position: 40%;
+		}
 	}
 	.about-text {
 		grid-area: text;
+		h3, a{
+			@include respond (smaller) {
+				font-size: 2em;
+			}
+			@include respond (medium) {
+				font-size: 1.6em;
+			}
+		}
 		p{
 			margin: 48px 0;
+			@include respond (medium) {
+				font-size: 1.5em;
+			}
+			@include respond (smaller) {
+				font-size: 1.5em;
+			}
 		}
 	}
 }

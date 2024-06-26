@@ -6,4 +6,10 @@
     a{
         margin: 1rem;
     }
+    @include respond (medium) {
+        font-size: x-large;
+    }
+    @include respond (smaller) {
+        margin-top: 10vh;
+    }
 }
