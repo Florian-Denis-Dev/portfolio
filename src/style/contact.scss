@@ -12,9 +12,16 @@
         h3{
             margin-bottom: 1rem;
         }
+        @include respond (medium) {
+            margin-top: 1rem;
+        }
+        @include respond (smaller) {
+            margin: 1rem;
+        }
     }
 }
 form{
+    width: 24rem;
     display: flex;
     flex-direction: column;
     align-items: baseline;
@@ -22,6 +29,13 @@ form{
     border: 2px solid white;
     border-radius: 8px;
     padding: 1rem;
+    @include respond (smaller) {
+        width: 20rem;
+    }
+    @include respond (small) {
+        width: 100vw;
+        border: unset;
+    }
     .wrap {
         height: 100%;
         display: flex;
@@ -30,7 +44,7 @@ form{
     }
       
     button {
-        min-width: 350px;
+        width: 22rem;
         min-height: 60px;
         display: inline-flex;
         font-family: 'Nunito', sans-serif;
@@ -52,6 +66,12 @@ form{
         outline: none;
         position: relative;
         padding: 10px;
+        @include respond (smaller) {
+            width: 18rem;
+        }
+        @include respond (small) {
+            width: 90vw;
+        }
         &::before {
             content: '';
             border-radius: 12px;
@@ -110,7 +130,7 @@ form{
     position: relative;
     margin: 20px 0;
     input {
-        width: 350px;
+        width: 22rem;
         height: 60px;
         border-radius: 6px;
         font-size: 18px;
@@ -120,6 +140,12 @@ form{
         background: transparent;
         color: $background-color_dark;
         outline: none;
+        @include respond (smaller) {
+            width: 18rem;
+        }
+        @include respond (small) {
+            width: 90vw;
+        }
         &:focus {
             border: 2px solid transparent;
             
@@ -145,7 +171,7 @@ form{
     }
 }
 .wrapper {
-    width: 350px;
+    width: 22rem;
     background: transparent;
     margin-bottom: 3rem;
     h2 {
@@ -153,7 +179,7 @@ form{
         font-size: 16px;
     }
     textarea {
-        width: 100%;
+        width: 22rem;
         resize: none;
         height: 59px;
         outline: none;
@@ -165,6 +191,12 @@ form{
         caret-color: grey;
         border: 1px solid white;
         box-shadow: 20px 20px 60px #d9d9d9;
+        @include respond (smaller) {
+            width: 18rem;
+        }
+        @include respond (small) {
+            width: 90vw;
+        }
         &::placeholder{
             color: grey;
         }

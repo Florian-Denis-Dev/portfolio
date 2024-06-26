@@ -840,8 +840,19 @@ header .liens-header:hover {
 .contact .contact-title h3 {
   margin-bottom: 1rem;
 }
+@media (max-width: 768px) {
+  .contact .contact-title {
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 425px) {
+  .contact .contact-title {
+    margin: 1rem;
+  }
+}
 
 form {
+  width: 24rem;
   display: flex;
   flex-direction: column;
   align-items: baseline;
@@ -850,6 +861,17 @@ form {
   border-radius: 8px;
   padding: 1rem;
 }
+@media (max-width: 425px) {
+  form {
+    width: 20rem;
+  }
+}
+@media (max-width: 375px) {
+  form {
+    width: 100vw;
+    border: unset;
+  }
+}
 form .wrap {
   height: 100%;
   display: flex;
@@ -857,7 +879,7 @@ form .wrap {
   justify-content: center;
 }
 form button {
-  min-width: 350px;
+  width: 22rem;
   min-height: 60px;
   display: inline-flex;
   font-family: "Nunito", sans-serif;
@@ -879,6 +901,16 @@ form button {
   outline: none;
   position: relative;
   padding: 10px;
+}
+@media (max-width: 425px) {
+  form button {
+    width: 18rem;
+  }
+}
+@media (max-width: 375px) {
+  form button {
+    width: 90vw;
+  }
 }
 form button::before {
   content: "";
@@ -935,7 +967,7 @@ form button:hover::after, form button:focus::after {
   margin: 20px 0;
 }
 .input-field input {
-  width: 350px;
+  width: 22rem;
   height: 60px;
   border-radius: 6px;
   font-size: 18px;
@@ -945,6 +977,16 @@ form button:hover::after, form button:focus::after {
   background: transparent;
   color: #194058;
   outline: none;
+}
+@media (max-width: 425px) {
+  .input-field input {
+    width: 18rem;
+  }
+}
+@media (max-width: 375px) {
+  .input-field input {
+    width: 90vw;
+  }
 }
 .input-field input:focus {
   border: 2px solid transparent;
@@ -969,7 +1011,7 @@ form button:hover::after, form button:focus::after {
 }
 
 .wrapper {
-  width: 350px;
+  width: 22rem;
   background: transparent;
   margin-bottom: 3rem;
 }
@@ -978,7 +1020,7 @@ form button:hover::after, form button:focus::after {
   font-size: 16px;
 }
 .wrapper textarea {
-  width: 100%;
+  width: 22rem;
   resize: none;
   height: 59px;
   outline: none;
@@ -990,6 +1032,16 @@ form button:hover::after, form button:focus::after {
   caret-color: grey;
   border: 1px solid white;
   box-shadow: 20px 20px 60px #d9d9d9;
+}
+@media (max-width: 425px) {
+  .wrapper textarea {
+    width: 18rem;
+  }
+}
+@media (max-width: 375px) {
+  .wrapper textarea {
+    width: 90vw;
+  }
 }
 .wrapper textarea::placeholder {
   color: grey;
