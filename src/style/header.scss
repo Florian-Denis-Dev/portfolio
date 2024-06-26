@@ -3,11 +3,8 @@
 
 /* Header */
 header {
-	padding: 60px 0 10px;
+	padding: 30px 0 30px;	
 	width: 90%;
-	@include respond(large) {
-		width: 90%;			
-	}
 	nav {
 		display: flex;
 		justify-content: space-between;
@@ -16,6 +13,9 @@ header {
 		.left {
 			img{
 				height: 60px;
+				@include respond(medium) {
+					height: 46.88px;
+				}
 			}
 			
 		}
@@ -24,12 +24,13 @@ header {
 		background: none;
 		border: none;
 		cursor: pointer;
-	  }
+	}
 	  
 	nav img {
-		height: 38px;
+		height: 46.88px;
+		
 		@include respond(medium) {
-			height: 46.88px;
+			height: 38px;
 		}
 	}
 	
@@ -40,7 +41,7 @@ header {
 			align-items:center;
 		gap: 4vw;
 		@include respond(small) {
-			gap: 1rem;
+			gap: 0.5em;
 		}
 		.lang{
 			margin: 5px;
@@ -48,6 +49,15 @@ header {
 			min-width: 50px;
 			&:hover{
 				cursor: pointer;
+			}
+			@include respond(medium) {
+				font-size: 2em;
+			}
+			@include respond(smaller) {
+				font-size: 3em;
+			}
+			@include respond(small) {
+				font-size: 2.5em;
 			}
 		}
 	}
