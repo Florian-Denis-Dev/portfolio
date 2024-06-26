@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useNavigate, useLocation } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 import "../../style/index.css";
 import SunIcon from '../../assets/sun.png'; 
@@ -20,12 +20,15 @@ function Header(){
     };
 
     const handleLogoClick = () => {
-        if (location.pathname !== "/") {
+        navigate(-1);
+        setLogoTitle('return'); 
+    };
+    
+    const handleMenuClick = () => {
+        if (location.pathname === "/menu") {
             navigate(-1);
-            setLogoTitle('return'); 
         } else {
-            navigate('/'); 
-            setLogoTitle('home'); 
+            navigate("/menu");
         }
     };
 
@@ -65,14 +68,14 @@ function Header(){
                         </>
                     )}
                         <li>
-                        <Link to={location.pathname === "/menu" ? "/" : "/menu"} className="liens-header" title="menu">
+                        <button onClick={handleMenuClick} className="liens-header" title="menu">
                             <img 
                                 src={menuSrc} 
                                 onMouseOver={handleMenuHover}
                                 onMouseOut={handleMenuOut}
                                 alt="Menu" 
                             />
-                        </Link>
+                        </button>
                     </li>
                 </ul>
             </nav>
