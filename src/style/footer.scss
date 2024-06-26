@@ -19,7 +19,7 @@ footer {
 		margin: 0.5em;
 		font-size: medium;
 	};
-	@media (max-width: 768px) {
+	@include respond(medium) {
 		margin-top: auto;
 	}
 }

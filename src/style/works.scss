@@ -3,6 +3,14 @@
 
 .works-title{
 	margin: 0 0 60px;
+	font-size: 1.5em;
+	@include respond(large) {
+		font-size: 1.2em;
+	}
+	@include respond(medium) {
+		font-size: 2em;
+		margin: 0 0 1em;
+	}
 }
 
 .works {
@@ -18,12 +26,27 @@
 		img{
 			width: 25rem;
 			border-radius: 10% 1%;
-			@media (max-width: 425px) {
+			@include respond(large) {
+				width: 20rem;
+			}
+			@include respond(medium) {
+				width: 22rem;
+			}
+			@include respond(smaller) {
 				width: 13rem;
 			}
 		}
-		@media (max-width: 425px) {
+		@include respond(medium) {
 			flex-direction: column-reverse;
+		}
+		h3 {
+			font-size: 1.17em;
+			@include respond(medium) {
+				font-size: 2em;
+			}
+			@include respond(smaller) {
+				font-size: 1.8em;
+			}
 		}
 	}
 	overflow-y: auto;
@@ -34,4 +57,3 @@
 	gap: 20px;
 	min-width: 50vw;
 }
-

@@ -523,7 +523,7 @@ header {
   padding: 60px 0 10px;
   width: 90%;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1024px) {
   header {
     width: 90%;
   }
@@ -663,6 +663,18 @@ header .liens-header:hover {
 /* vrai darkmode in preparation*/
 .works-title {
   margin: 0 0 60px;
+  font-size: 1.5em;
+}
+@media (max-width: 1024px) {
+  .works-title {
+    font-size: 1.2em;
+  }
+}
+@media (max-width: 768px) {
+  .works-title {
+    font-size: 2em;
+    margin: 0 0 1em;
+  }
 }
 
 .works {
@@ -685,14 +697,37 @@ header .liens-header:hover {
   width: 25rem;
   border-radius: 10% 1%;
 }
+@media (max-width: 1024px) {
+  .works figure img {
+    width: 20rem;
+  }
+}
+@media (max-width: 768px) {
+  .works figure img {
+    width: 22rem;
+  }
+}
 @media (max-width: 425px) {
   .works figure img {
     width: 13rem;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 768px) {
   .works figure {
     flex-direction: column-reverse;
+  }
+}
+.works figure h3 {
+  font-size: 1.17em;
+}
+@media (max-width: 768px) {
+  .works figure h3 {
+    font-size: 2em;
+  }
+}
+@media (max-width: 425px) {
+  .works figure h3 {
+    font-size: 1.8em;
   }
 }
 .works::-webkit-scrollbar {
