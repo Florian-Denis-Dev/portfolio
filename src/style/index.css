@@ -2,6 +2,7 @@
 /*or?*/
 /*bleu turquoise*/
 /*light turquoise*/
+/*light*/
 /*sable*/
 /* bleu foncé*/
 /* vraie couleur selectionnées: */
@@ -9,6 +10,7 @@
 /*or?*/
 /*bleu turquoise*/
 /*light turquoise*/
+/*light*/
 /*sable*/
 /* bleu foncé*/
 /* vraie couleur selectionnées: */
@@ -30,9 +32,6 @@
 .light a:hover {
   color: #575757;
   text-decoration-color: #575757;
-}
-.light button {
-  color: #07475A;
 }
 .light .menu-link a {
   text-decoration: none;
@@ -358,6 +357,7 @@ body {
 /*or?*/
 /*bleu turquoise*/
 /*light turquoise*/
+/*light*/
 /*sable*/
 /* bleu foncé*/
 /* vraie couleur selectionnées: */
@@ -407,6 +407,7 @@ body {
 /*or?*/
 /*bleu turquoise*/
 /*light turquoise*/
+/*light*/
 /*sable*/
 /* bleu foncé*/
 /* vraie couleur selectionnées: */
@@ -551,6 +552,7 @@ footer {
 /*or?*/
 /*bleu turquoise*/
 /*light turquoise*/
+/*light*/
 /*sable*/
 /* bleu foncé*/
 /* vraie couleur selectionnées: */
@@ -656,6 +658,7 @@ header .liens-header:hover {
 /*or?*/
 /*bleu turquoise*/
 /*light turquoise*/
+/*light*/
 /*sable*/
 /* bleu foncé*/
 /* vraie couleur selectionnées: */
@@ -719,6 +722,7 @@ header .liens-header:hover {
 /*or?*/
 /*bleu turquoise*/
 /*light turquoise*/
+/*light*/
 /*sable*/
 /* bleu foncé*/
 /* vraie couleur selectionnées: */
@@ -799,6 +803,7 @@ header .liens-header:hover {
 /*or?*/
 /*bleu turquoise*/
 /*light turquoise*/
+/*light*/
 /*sable*/
 /* bleu foncé*/
 /* vraie couleur selectionnées: */
@@ -885,6 +890,7 @@ header .liens-header:hover {
 /*or?*/
 /*bleu turquoise*/
 /*light turquoise*/
+/*light*/
 /*sable*/
 /* bleu foncé*/
 /* vraie couleur selectionnées: */
@@ -919,7 +925,7 @@ form {
   flex-direction: column;
   align-items: baseline;
   background-color: transparent;
-  border: 2px solid white;
+  border: 2px solid #d7b38e;
   border-radius: 8px;
   padding: 1rem;
 }
@@ -1035,7 +1041,7 @@ form button:hover::after, form button:focus::after {
   font-size: 18px;
   padding: 0 15px;
   border: 2px solid transparent;
-  box-shadow: 2px 2px 10px gainsboro, -2px -2px 10px white;
+  box-shadow: 2px 2px 10px #d7b38e, -2px -2px 10px #e4ccb4;
   background: transparent;
   color: #194058;
   outline: none;
@@ -1093,7 +1099,7 @@ form button:hover::after, form button:focus::after {
   max-height: 330px;
   caret-color: grey;
   border: 1px solid white;
-  box-shadow: 20px 20px 60px #d9d9d9;
+  box-shadow: 15px 15px 60px #d7b38e;
 }
 @media (max-width: 425px) {
   .wrapper textarea {
