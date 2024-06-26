@@ -747,8 +747,23 @@ header .liens-header:hover {
   overflow: auto;
   width: 100vw;
 }
+@media (max-width: 768px) {
+  .project {
+    flex-direction: column;
+  }
+}
 .project .project-info {
   margin-left: 1rem;
+}
+@media (max-width: 1024px) {
+  .project .project-info {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .project .project-info {
+    font-size: 0.8rem;
+  }
 }
 .project .project-info h2 {
   margin-bottom: 1rem;
@@ -779,6 +794,30 @@ header .liens-header:hover {
 }
 .gallery img {
   height: 80vh;
+}
+@media (max-width: 768px) {
+  .gallery img {
+    height: 50vh;
+  }
+}
+@media (max-width: 425px) {
+  .gallery img {
+    height: auto;
+    width: 100vw;
+  }
+}
+@media (max-width: 375px) {
+  .gallery img {
+    width: 100vw;
+  }
+}
+@media (max-width: 425px) {
+  .gallery {
+    overflow-x: auto;
+    overflow-y: hidden;
+    flex-direction: column;
+    height: 100vh;
+  }
 }
 
 /*or?*/

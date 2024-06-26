@@ -6,8 +6,17 @@
   gap: 1rem;
   overflow: auto;
   width: 100vw;
+  @include respond(medium) {
+    flex-direction: column;
+  }
   .project-info{
     margin-left: 1rem;
+    @include respond (large) {
+      font-size: 1rem;
+    }
+    @include respond (medium) {
+      font-size: 0.8rem;
+    }
     h2{
       margin-bottom: 1rem;
     }
@@ -36,6 +45,22 @@
   display: flex;
   img{
     height: 80vh;
+    @include respond (medium) {
+      height: 50vh;
+    }
+    @include respond (smaller) {
+      height: auto;
+      width: 100vw;
+    }
+    @include respond (small) {
+      width: 100vw;
+    }
   }
   overflow-x: hidden;
+  @include respond (smaller) {
+    overflow-x: auto;
+    overflow-y: hidden;  
+    flex-direction: column;
+    height: 100vh;
+  }
 }

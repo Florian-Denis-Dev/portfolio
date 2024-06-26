@@ -70,11 +70,18 @@ const ProjectDetail = ({ projects, setShowFooter, theme}) => {
     let container = document.querySelector('.gallery');
     
     const handleScroll = function(e) {
-      if (e.deltaY !== 0) {
-        e.preventDefault();
-        container.scrollLeft += e.deltaY;
+      if (window.innerWidth <= 425) { 
+        if (e.deltaY !== 0) {
+          e.preventDefault();
+          container.scrollTop += e.deltaY;
+        }
+      } else {
+        if (e.deltaY !== 0) {
+          e.preventDefault();
+          container.scrollLeft += e.deltaY;
+        }
       }
-    };
+    };    
   
     if (container) {
       container.addEventListener('wheel', handleScroll);
