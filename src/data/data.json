@@ -3,27 +3,45 @@
 	  "id": "project1",
 	  "title_key": "project1_title",
 	  "skill_key": "project1_skill",
-      "description_key": "project1_description",
-	  "technologies": ["html", "CSS", "JavaScript"],
-	  "sourceLink": "https://github.com/user/projet1",
-	  "images": ["p3.png", "p6.png", "p7.png"]
+      "description_key": "project1_description", 
+	  "technologies": ["Node.js", "Express", "MongoDB"],
+	  "sourceLink": "https://github.com/user/projet3",
+	  "images": ["p51.png", "p52.png", "p53.png", "p54.png", "p55.png"]
 	},
 	{
-	  "id": "project2",
+	  "id": "project2", 
 	  "title_key": "project2_title",
 	  "skill_key": "project2_skill",
 	  "description_key": "project2_description",
 	  "technologies": ["react", "scss", "javascript"],
 	  "sourceLink": "https://github.com/user/projet2",
-	  "images": ["p6.png"]
+	  "images": ["p41.png", "p42.png", "p43.png", "p44.png", "p45.png", "p46.png"] 
 	},
 	{
-		"id": "project3",
+		"id": "project3", 
 		"title_key": "project3_title",
 		"skill_key": "project3_skill",
 		"description_key": "project3_description",
-		"technologies": ["Node.js", "Express", "MongoDB"],
-		"sourceLink": "https://github.com/user/projet3",
-		"images": ["p7.png"]
+		"technologies": ["seo", "lighthouse", "wave", "schema"], 
+		"sourceLink": "https://github.com/user/projet2",
+		"images": ["p31.png", "p32.png", "p33.png", "p34.png", "p35.png"]
+	  },
+	  {
+		"id": "project4", 
+		"title_key": "project4_title",
+		"skill_key": "project4_skill",
+		"description_key": "project2_description",
+		"technologies": ["html", "CSS", "JavaScript"],
+		"sourceLink": "https://github.com/user/projet1",
+		"images": ["p21.png", "p22.png", "p23.png", "p24.png", "p25.png", "p26.png", "p27.png"]
+	  },
+	  {
+		"id": "project5", 
+		"title_key": "project5_title",
+		"skill_key": "project5_skill",
+		"description_key": "project5_description",
+		"technologies": ["html", "css"],
+		"sourceLink": "https://github.com/user/projet2",
+		"images": ["p11.png", "p12.png"]
 	  }
   ]  

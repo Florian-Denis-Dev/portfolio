@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import p3 from "../../assets/p3.png";
-import p6 from "../../assets/p6.png";
-import p7 from "../../assets/p7.png";
+import p1 from "../../assets/p5-1.png";
+import p2 from "../../assets/p4-1.png";
+import p3 from "../../assets/p3-1.png";
+import p4 from "../../assets/p2-1.png";
+import p5 from "../../assets/p1-1.png";
 
 function Works({ projects }) {
     const { t } = useTranslation();
@@ -17,7 +19,12 @@ function Works({ projects }) {
                 {projects.map((project) => (
                     <figure key={project.id}>
                         <Link to={`/works/${project.id}`}>
-                            <img src={project.id === "project1" ? p3 : project.id === "project2" ? p6 : p7} alt={t('work_alt', { projectName: project.title })} />
+                            <img src={
+                                project.id === "project1" ? p1 :
+                                project.id === "project2" ? p2 :
+                                project.id === "project3" ? p3 :
+                                project.id === "project4" ? p4 : p5
+                            } alt={t('work_alt', { projectName: project.title })} />
                         </Link>
                         <figcaption>
                             <h3 className="project-title">{t(project.title_key)}</h3>

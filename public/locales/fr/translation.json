@@ -36,15 +36,27 @@
     "works_title": "Projets:",
     "link_to_project": "GitHub du projet",
 
-    "project1_title": "Sophie Bluel",
-    "project1_skill": "Développement web via Javascript",
-    "project1_description": "Récupération des données utilisateurs dans le javascript via des formulaires, manipulation des éléments du DOM via JS, Gestion des évenements utilisateurs via JS.",
+    "project1_title": "Mon vieux grimmoire",
+    "project1_skill":"Développement back-end avec NodeJS",
+    "project1_description":"Implémentation d'un modèle logique de données conformément à la réglementation, Mise en oeuvre des opérations CRUD de manière sécurisée, Stockage des données de manière sécurisée.",
 
     "project2-title": "Kasa",
     "project2_skill": "React",
     "project2_description": "Initialisation d'une application avec Create react app, Configuration d'une navigation entre les pages avec React router, Développement d'élément de l'interface d'un site web via les composants de React.",
 
-    "project3_title": "Mon vieux grimmoire",
-    "project3_skill":"Développement back-end avec NodeJS",
-    "project3_description":"Implémentation d'un modèle logique de données conformément à la réglementation, Mise en oeuvre des opérations CRUD de manière sécurisée, Stockage des données de manière sécurisée."
+
+    "project3_title": "Nina Carducci",
+    "project3_skill":"Optimisation et debug",
+    "project3_description":"Optimiser les performances d’un site web, Débugger ce site web grâce aux Chrome DevTools, Rédiger un cahier de recette pour tester un site",
+
+
+    "project4_title": "Sophie Bluel",
+    "project4_skill": "Développement web via Javascript",
+    "project4_description": "Récupération des données utilisateurs dans le javascript via des formulaires, manipulation des éléments du DOM via JS, Gestion des évenements utilisateurs via JS.",
+
+    
+    "project5_title": "Booki",
+    "project5_skill":"Intégration web avec HTML et CSS",
+    "project5_description":"Intégrer du contenu conformément à une maquette avec HTML et CSS, Implémenter une interface responsive avec HTML et CSS"
+
 }

@@ -36,15 +36,24 @@
     "works_title": "Projects:",
     "link_to_project": "Project's GitHub",
 
-    "project1_title": "Sophie Bluel",
-    "project1_skill": "Web development with Javascript",
-    "project1_description": "User data retrieval in JavaScript through forms, DOM elements manipulation via JS, User events management via JS.",
-    
+    "project1_title": "My Old Grimoire",
+    "project1_skill": "Back-end development with NodeJS",
+    "project1_description": "Implementation of a logical data model in compliance with regulations, secure execution of CRUD operations, secure data storage.",
+
     "project2_title": "Kasa",
     "project2_skill": " React",
     "project2_description": "Initialization of an application with Create React App, configuration of page navigation with React Router, development of web interface elements through React components.",
     
-    "project3_title": "My Old Grimoire",
-    "project3_skill": "Back-end development with NodeJS",
-    "project3_description": "Implementation of a logical data model in compliance with regulations, secure execution of CRUD operations, secure data storage."
+    "project3_title": "Nina Carducci",
+    "project3_skill":"Optimization and debugging",
+    "project3_description":"Optimize the performance of a website, Debug this website using Chrome DevTools, Write a recipe book to test a site",
+
+    "project4_title": "Sophie Bluel",
+    "project4_skill": "Web development via Javascript",
+    "project4_description": "Retrieving user data in javascript via forms, manipulating DOM elements via JS, Managing user events via JS.",
+
+    "project5_title": "Booki",
+    "project5_skill":"Web integration with HTML and CSS",
+    "project5_description":"Integrate content in accordance with a mockup with HTML and CSS, Implement a responsive interface with HTML and CSS"
+
 }
