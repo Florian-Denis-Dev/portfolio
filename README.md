@@ -10,7 +10,9 @@ Ce portfolio est une vitrine de mes compétences, de mes projets et de mon expé
 
 ## Projets en vedette
 
-(Insérez ici des descriptions et des liens vers quelques-uns de vos projets les plus impressionnants)
+- Back-end avec NodeJS: [mon-vieux-grimoire](https://github.com/Florian-Denis-Dev/projet-7)
+- React: [Kasa](https://github.com/Florian-Denis-Dev/kasa)
+- Javascript: [sophie-bluel](https://github.com/Florian-Denis-Dev/Projet-3)
 
 ## Contactez-moi
 
@@ -18,6 +20,6 @@ Si vous êtes intéressé par mon travail et que vous souhaitez discuter d'oppor
 
 Vous pouvez également me suivre sur LinkedIn et GitHub ou instagram:
 
-- LinkedIn : [LinkedIn](https://www.linkedin.com/in/florian-d-a4ba7313b/)
-- GitHub : [GitHub](https://github.com/Florian-Denis-Dev)
-- Instagram : [instagram](https://www.instagram.com/florian.denis.dev/)
+- [LinkedIn](https://www.linkedin.com/in/florian-d-a4ba7313b/)
+- [GitHub](https://github.com/Florian-Denis-Dev)
+- [instagram](https://www.instagram.com/florian.denis.dev/)
