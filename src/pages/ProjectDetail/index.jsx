@@ -2,35 +2,35 @@ import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 /* booki*/
-import p11 from '../../assets/p1-1.png';
-import p12 from '../../assets/p1-2.png';
+import p11 from '../../assets/p1-1.webp';
+import p12 from '../../assets/p1-2.webp';
 /* sophie bluel */
-import p21 from '../../assets/p2-1.png';
-import p22 from '../../assets/p2-2.png';
-import p23 from '../../assets/p2-3.png';
-import p24 from '../../assets/p2-4.png';
-import p25 from '../../assets/p2-5.png';
-import p26 from '../../assets/p2-6.png';
-import p27 from '../../assets/p2-7.png';
+import p21 from '../../assets/p2-1.webp';
+import p22 from '../../assets/p2-2.webp';
+import p23 from '../../assets/p2-3.webp';
+import p24 from '../../assets/p2-4.webp';
+import p25 from '../../assets/p2-5.webp';
+import p26 from '../../assets/p2-6.webp';
+import p27 from '../../assets/p2-7.webp';
 /*Nina Carduccci*/
-import p31 from '../../assets/p3-1.png';
-import p32 from '../../assets/p3-2.png';
-import p33 from '../../assets/p3-3.png';
-import p34 from '../../assets/p3-4.png';
-import p35 from '../../assets/p3-5.png';
+import p31 from '../../assets/p3-1.webp';
+import p32 from '../../assets/p3-2.webp';
+import p33 from '../../assets/p3-3.webp';
+import p34 from '../../assets/p3-4.webp';
+import p35 from '../../assets/p3-5.webp';
 /* kasa */
-import p41 from '../../assets/p4-1.png';
-import p42 from '../../assets/p4-2.png';
-import p43 from '../../assets/p4-3.png';
-import p44 from '../../assets/p4-4.png';
-import p45 from '../../assets/p4-5.png';
-import p46 from '../../assets/p4-6.png';
+import p41 from '../../assets/p4-1.webp';
+import p42 from '../../assets/p4-2.webp';
+import p43 from '../../assets/p4-3.webp';
+import p44 from '../../assets/p4-4.webp';
+import p45 from '../../assets/p4-5.webp';
+import p46 from '../../assets/p4-6.webp';
 /* mon vieux grimmoire */
-import p51 from '../../assets/p5-1.png';
-import p52 from '../../assets/p5-2.png';
-import p53 from '../../assets/p5-3.png';
-import p54 from '../../assets/p5-4.png';
-import p55 from '../../assets/p5-5.png';
+import p51 from '../../assets/p5-1.webp';
+import p52 from '../../assets/p5-2.webp';
+import p53 from '../../assets/p5-3.webp';
+import p54 from '../../assets/p5-4.webp';
+import p55 from '../../assets/p5-5.webp';
 
 const images = {
   'p11.png': p11,

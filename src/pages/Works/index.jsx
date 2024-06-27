@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import p1 from "../../assets/p5-1.png";
-import p2 from "../../assets/p4-1.png";
-import p3 from "../../assets/p3-1.png";
-import p4 from "../../assets/p2-1.png";
-import p5 from "../../assets/p1-1.png";
+import p1 from "../../assets/p5-1.webp";
+import p2 from "../../assets/p4-1.webp";
+import p3 from "../../assets/p3-1.webp";
+import p4 from "../../assets/p2-1.webp";
+import p5 from "../../assets/p1-1.webp";
 
 function Works({ projects }) {
     const { t } = useTranslation();
