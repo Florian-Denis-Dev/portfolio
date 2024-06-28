@@ -47,7 +47,7 @@
 
     "works_title": "Projets:",
     "works_label": "Travaux",
-    "link_to_project": "Lien vers le projet {{projectName}}",
+    "link_to_project": "Lien vers le projet",
     "project_label": "Projet",
     "project_image_label": "Image du projet",
 
