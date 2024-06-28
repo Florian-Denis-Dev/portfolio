@@ -7,30 +7,31 @@ function Menu() {
 
     return(
         <>
-            <ul className="menu-link">
+            <ul className="menu-link" aria-label="Menu de navigation">
                 <li>
-                    <Link to="/">
+                    <Link to="/" aria-label={t('menu_home')}>
                         <h1>{t('menu_home')}</h1>
                     </Link>
                 </li>
                 <li>
-                    <Link to="/works">
+                    <Link to="/works" aria-label={t('menu_works')}>
                         <h1>{t('menu_works')}</h1>
                     </Link>
                 </li>
                 <li>
-                    <Link to="/about">
+                    <Link to="/about" aria-label={t('menu_about')}>
                         <h1>{t('menu_about')}</h1>
                     </Link>
                 </li>
                 <li>
-                    <Link to="/contact">
+                    <Link to="/contact" aria-label={t('menu_contact')}>
                         <h1>{t('menu_contact')}</h1>
                     </Link>
                 </li>
             </ul>
         </>
     )
+    
 }
 
 export default Menu;

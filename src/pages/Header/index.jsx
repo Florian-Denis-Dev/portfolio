@@ -33,10 +33,10 @@ function Header(){
     };
 
     return(
-        <header className={`header ${theme}`}> 
+        <header className={`header ${theme}`} aria-label="En-tête"> 
             <nav>
-            <div className="left">
-            <button onClick={handleLogoClick} className="logo-button">
+                <div className="left">
+                    <button onClick={handleLogoClick} className="logo-button liens-header" aria-label={t(`home_logo_${logoTitle}`)}>
                         <img 
                             id="logo" 
                             src={logoSrc} 
@@ -49,26 +49,26 @@ function Header(){
                     {location.pathname === "/" && (
                         <>
                             <li>
-                                <button onClick={toggleTheme} className="liens-header">
+                                <button onClick={toggleTheme} className="liens-header" aria-label={theme === 'light' ? t('dark_theme') : t('light_theme')}>
                                     {theme === 'light' ? <img src={MoonIcon} alt={t('dark_theme')} title={t('dark_theme')} /> : <img src={SunIcon} alt={t('light_theme')} title={t('light_theme')} />}
                                 </button>
                             </li>
                             <li>
                                 {currentLanguage === 'en' && (
-                                    <button className="lang" onClick={() => changeLanguage('fr')}>
+                                    <button className="lang liens-header" onClick={() => changeLanguage('fr')} aria-label={t('key_fr')}>
                                         {t('key_fr')}
                                     </button>
                                 )}
                                 {currentLanguage === 'fr' && (
-                                    <button className="lang" onClick={() => changeLanguage('en')}>
+                                    <button className="lang liens-header" onClick={() => changeLanguage('en')} aria-label={t('key_en')}>
                                         {t('key_en')}
                                     </button>
                                 )}
                             </li>
                         </>
                     )}
-                        <li>
-                        <button onClick={handleMenuClick} className="liens-header" title="menu">
+                    <li>
+                        <button onClick={handleMenuClick} className="liens-header" title="menu" aria-label="Menu">
                             <img 
                                 src={menuSrc} 
                                 onMouseOver={handleMenuHover}
@@ -81,6 +81,7 @@ function Header(){
             </nav>
         </header>
     )
+    
 }
 
 export default Header;

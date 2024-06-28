@@ -97,23 +97,24 @@ const ProjectDetail = ({ projects, setShowFooter, theme}) => {
   
 
   return (
-    <div className='project'>
+    <div className='project' aria-label={`Projet ${id}`}>
       <div className='project-info' >
-        <h2>{t(project.title_key)}</h2>
-        <h3>{t(project.skill_key)}</h3>
-        <p>{t(project.description_key)}</p>
-        <p>{project.technologies.join(', ')}</p>
-        <a href={project.sourceLink}>{t('link_to_project')}</a>
+        <h2 aria-label={t(project.title_key)}>{t(project.title_key)}</h2>
+        <h3 aria-label={t(project.skill_key)}>{t(project.skill_key)}</h3>
+        <p aria-label={t(project.description_key)}>{t(project.description_key)}</p>
+        <p aria-label={project.technologies.join(', ')}>{project.technologies.join(', ')}</p>
+        <a href={project.sourceLink} aria-label={t('link_to_project')}>{t('link_to_project')}</a>
       </div>
       <div className='gallery'>
         {project.images.map((imageName, index) => (
           <div key={index} className={`image-container ${theme === 'dark' ? 'dark-overlay' : ''}`}>
-            <img src={images[imageName]} alt={`project ${id}`} />
+            <img src={images[imageName]} alt={`project ${id}`} aria-label={`Image du projet ${id}`} />
           </div>
         ))}
       </div>
     </div>
   );
+
 };
 
 export default ProjectDetail;

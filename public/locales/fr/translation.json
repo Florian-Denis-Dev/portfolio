@@ -1,4 +1,7 @@
 {
+    "header_label": "En-tête",
+    "menu_label": "Menu",
+
     "key_en": "en",
     "home_alt": "Logo du site",
     "home_logo_home": "Accueil",
@@ -7,6 +10,7 @@
     "light_theme": "Thème clair",
     "menu_alt": "Menu",
 
+    "home_label": "Accueil",
     "home_title": "HEY, JE SUIS FLORIAN DENIS",
     "home_greeting": "Ravi de t'accueillir ici !",
     "home_description": "Je suis développeur web & graphiste",
@@ -17,6 +21,7 @@
     "menu_works": "Projets",
     "menu_about": "À propos",
     "menu_contact": "Contact",
+    "navigation_menu": "Menu de navigation",
 
     "about_alt": "Florian",
     "about_heading": "À propos",
@@ -30,11 +35,23 @@
     "contact_message_placeholder": "écrivez votre message ici..",
     "contact_send_button": "Envoyer",
     "contact_subject": "Message de {{name}} ({{email}})",
+    "contact_form": "formulaire de contact",
+    "message_text_area": "zone de texte pour le message",
+
 
     "footer_message": "© 2024 Florian Denis. Tout droits réservés",
+    "footer_label": "Pied de page",
+    "instagram_label": "Instagram",
+    "linkedin_label": "Linkedin",
+    "github_label": "Github",
+
 
     "works_title": "Projets:",
-    "link_to_project": "GitHub du projet",
+    "works_label": "Travaux",
+    "link_to_project": "Lien vers le projet {{projectName}}",
+    "project_label": "Projet",
+    "project_image_label": "Image du projet",
+
 
     "project1_title": "Mon vieux grimmoire",
     "project1_skill":"Développement back-end avec NodeJS",
@@ -57,6 +74,10 @@
     
     "project5_title": "Booki",
     "project5_skill":"Intégration web avec HTML et CSS",
-    "project5_description":"Intégrer du contenu conformément à une maquette avec HTML et CSS, Implémenter une interface responsive avec HTML et CSS"
+    "project5_description":"Intégrer du contenu conformément à une maquette avec HTML et CSS, Implémenter une interface responsive avec HTML et CSS",
+
+    "error_page": "Page d'erreur",
+    "error_message": "Oups! La page que vous demandez n'existe pas.",
+    "return_home": "Retourner sur la page d’accueil"
 
 }

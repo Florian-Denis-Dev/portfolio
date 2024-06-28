@@ -76,6 +76,9 @@
   color: #023047;
   filter: drop-shadow(0 0 20px #005e74);
 }
+.light .right button {
+  color: #194058;
+}
 
 .dark {
   background-color: #194058;
@@ -104,10 +107,15 @@
   color: #d3f1ff;
 }
 .dark .liens-header {
-  color: #d3f1ff;
+  color: #ffc941;
+  transition: filter 0.3s ease;
 }
 .dark .liens-header:hover {
   color: #ffc941;
+  filter: drop-shadow(0 0 20px #ffc941);
+}
+.dark .right button {
+  color: #e8ae41;
 }
 .dark form {
   border-color: #0D6A87;

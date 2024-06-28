@@ -64,6 +64,11 @@
             filter: drop-shadow(0 0 20px $color_paragraph);
         }
     }
+    .right {
+        button {
+            color: $background-color_dark;
+        }
+    }
 }
   
 .dark {
@@ -92,9 +97,16 @@
         }
     }
     .liens-header {
-		color: $color_paragraph_dark;
+		color: $color_flash_gold;
+        transition: filter 0.3s ease;
 		&:hover {
 			color: $color_flash_gold;
+            filter: drop-shadow(0 0 20px $color_flash_gold);
+        }
+    }
+    .right {
+        button {
+            color: $background-color_gold;
         }
     }
     form {

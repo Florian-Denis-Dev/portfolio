@@ -1,4 +1,6 @@
 {
+    "header_label": "Header",
+    "menu_label": "Menu",
     "key_fr" : "fr",
     "home_alt": "Site logo",
     "home_logo_home": "Home",
@@ -7,6 +9,7 @@
     "light_theme": "Light theme",
     "menu_alt": "Menu",
 
+    "home_label": "Home",
     "home_title": "HI, I'M FLORIAN DENIS",
     "home_greeting": "It's nice to see you here!",
     "home_description": "I'm a web developer, & a graphic designer",
@@ -17,6 +20,7 @@
     "menu_works": "Works",
     "menu_about": "About",
     "menu_contact": "Contact",
+    "navigation_menu": "Navigation menu",
 
     "about_alt": "Florian",
     "about_heading": "About",
@@ -30,11 +34,20 @@
     "contact_message_placeholder": "And you can type your message..",
     "contact_send_button": "Send",
     "contact_subject": "Message from {{name}} ({{email}})",
+    "contact_form": "contact form",
+    "message_text_area": "text area for the message",
 
     "footer_message": "© 2024 Florian Denis. All rights reserved",
+    "footer_label": "Footer",
+    "instagram_label": "Instagram",
+    "linkedin_label": "Linkedin",
+    "github_label": "Github",
 
     "works_title": "Projects:",
-    "link_to_project": "Project's GitHub",
+    "works_label": "Works",
+    "link_to_project": "Link to the project {{projectName}}",
+    "project_label": "Project",
+    "project_image_label": "Project image",
 
     "project1_title": "My Old Grimoire",
     "project1_skill": "Back-end development with NodeJS",
@@ -54,6 +67,9 @@
 
     "project5_title": "Booki",
     "project5_skill":"Web integration with HTML and CSS",
-    "project5_description":"Integrate content in accordance with a mockup with HTML and CSS, Implement a responsive interface with HTML and CSS"
+    "project5_description":"Integrate content in accordance with a mockup with HTML and CSS, Implement a responsive interface with HTML and CSS",
 
+    "error_page": "Error page",
+    "error_message": "Oops! The page you are asking for does not exist.",
+    "return_home": "Return to the home page"
 }

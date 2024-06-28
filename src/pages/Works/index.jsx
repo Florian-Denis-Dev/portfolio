@@ -12,13 +12,13 @@ function Works({ projects }) {
 
     return (
         <>
-            <div className="works-title">
+            <div className="works-title" aria-label={t('works_title')}>
                 <h2>{t('works_title')}</h2>
             </div>
             <div className="works">
                 {projects.map((project) => (
-                    <figure key={project.id}>
-                        <Link to={`/works/${project.id}`}>
+                    <figure key={project.id} aria-label={t(project.title_key)}>
+                        <Link to={`/works/${project.id}`} aria-label={t('link_to_project', { projectName: project.title })}>
                             <img src={
                                 project.id === "project1" ? p1 :
                                 project.id === "project2" ? p2 :
@@ -34,7 +34,8 @@ function Works({ projects }) {
                 ))}
             </div>
         </>
-    );
+    )
+    
 }
 
 export default Works;
