@@ -84,7 +84,7 @@ const ProjectDetail = ({ projects, setShowFooter, theme}) => {
     };    
   
     if (container) {
-      container.addEventListener('wheel', handleScroll, { passive: true });
+      container.addEventListener('wheel', handleScroll);
     }
     
     return () => {
