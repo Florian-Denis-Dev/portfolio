@@ -684,16 +684,28 @@ header .liens-header:hover {
 }
 
 .intro {
-  margin: 100px 0 0;
+  margin: 12vh 0 0;
+  font-size: x-large;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 }
+@media (max-width: 768px) {
+  .intro {
+    font-size: large;
+  }
+}
 @media (max-width: 425px) {
   .intro {
+    font-size: medium;
     align-items: flex-start;
+  }
+}
+@media (max-width: 375px) {
+  .intro {
+    font-size: smaller;
   }
 }
 
@@ -865,7 +877,13 @@ header .liens-header:hover {
 
 .gallery {
   display: flex;
+  border-radius: 8px 0;
   overflow-x: hidden;
+}
+@media (max-width: 375px) {
+  .gallery {
+    border-radius: 0px;
+  }
 }
 .gallery img {
   height: 80vh;

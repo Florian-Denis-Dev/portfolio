@@ -43,6 +43,10 @@
 }
 .gallery{
   display: flex;
+  border-radius: 8px 0;
+  @include respond (small) {
+    border-radius: 0px;
+  }
   img{
     height: 80vh;
     @include respond (medium) {
