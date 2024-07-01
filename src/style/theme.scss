@@ -3,7 +3,9 @@
 .light {
     background-color: $background-color_light;
     color: $color_blue;
-
+    --color1: rgb(255, 249, 237);
+    --color2: rgba(255, 249, 237, 0.45);
+    --color3: transparent;
     h3 {
         color: $color_paragraph;
         &:hover{
@@ -53,7 +55,7 @@
     #logo{
             transition: filter 0.3s ease;
             &:hover{
-                filter: drop-shadow(0 0 20px $background-color_darker);
+                filter: drop-shadow(0 0 60px $background-color_darker);
             }   
     }
     .liens-header {
@@ -74,6 +76,9 @@
 .dark {
     background-color: $background-color_dark;
     color: $color_light;
+    --color1: rgba(1, 20, 31);
+    --color2: rgba(1, 20, 31, 0.45);
+    --color3: transparent;
     h1 {
         color: $color_gradient_gold;
     }

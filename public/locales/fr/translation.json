@@ -24,11 +24,11 @@
 
     "about_alt": "Florian",
     "about_heading": "À propos",
-    "about_content": "Salut, je suis Florian DENIS, un développeur web français, passionné par les nouvelles technologies, comme les blockchains et l'IA, et j'espère pouvoir contribuer à aider les entreprises et les gens.",
+    "about_content": "Salut, je suis Florian DENIS, un développeur web français, passionné par les nouvelles technologies, comme les blockchains et l'IA, et j'espère pouvoir contribuer à aider les entreprises et les particuliers.",
     "about_resume_cta": "Mon CV",
 
     "contact_heading": "Contact",
-    "contact_instruction": "Vous pouvez m'envoyer un mail là:",
+    "contact_instruction": "écrivez votre email directement:", 
     "contact_name_label": "Entrez votre nom",
     "contact_email_label": "Votre email",
     "contact_message_placeholder": "écrivez votre message ici..",

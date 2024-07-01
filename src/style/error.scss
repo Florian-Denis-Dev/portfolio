@@ -26,7 +26,7 @@
 }
 .titre-error {
 	h2 {
-		color: $color_light;
+		color: $background-color_dark;
 		@include respond(small) {
 			margin: 2rem;
 		}

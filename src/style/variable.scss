@@ -1,21 +1,22 @@
-$color_title: #BFA181; /*or?*/
-$color_paragraph: #005e74; /*bleu turquoise*/
-$color_paragraph_dark: #d3f1ff; /*light turquoise*/
+$font-family_1: 'Montserrat', sans-serif;
+
+$color_title: #BFA181; 
+$color_paragraph: #005e74; 
+$color_paragraph_dark: #d3f1ff; 
 $color_light_grey: #cbcbcb;
 $color_dark_grey: #575757;
 $color_light_blue: #3583b4;
 $color_blue: #194058;
-/*light*/ 
-$color_light: #f4d398; /*sable*/
+
+$color_light: #f4d398; 
 $color_link: #E7D1BB; 
-$color_dark: #0a1828; /* bleu foncé*/
+$color_dark: #0a1828; 
 $color_gradient_gold:  #ffd174;
 $color_flash_gold:  #ffc941;
-$font-family_1: 'Montserrat', sans-serif;
-
+$color-very-light: #eadcce;
 $background-color_darker: #023047;
 $background-color_darkermore: #022347;
-/* vraie couleur selectionnées: */
+
 $background-color_dark:#194058;
 $background-color_lightest: #d7b38e;
 $background-color_light: #E7D1BB;
@@ -27,6 +28,3 @@ $background-color_gold:#e8ae41;
 $background-color_sea: #72E0E8;
 $background-color_darksea: #0D6A87;
 $background-color_darkersea: #07475A;
-/* vrai darkmode in preparation*/
-$background-color_darkmod-primaire:#0f0f0f;
-$background-color_darkmod-secondaire:#1a1a1a;

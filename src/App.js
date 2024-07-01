@@ -31,7 +31,20 @@ function AppContent() {
   const { t } = useTranslation();
   useEffect(() => {
     document.body.className = theme;
+    const updateBackground = (event) => {
+      document.body.style.setProperty('--mouse-x', `${event.clientX}px`);
+      document.body.style.setProperty('--mouse-y', `${event.clientY}px`);
+      document.body.style.setProperty('--color1', 'white');
+      document.body.style.setProperty('--color2', 'whitesmoke');
+      document.body.style.setProperty('--color3', 'transparent');
+    };
+    window.addEventListener('mousemove', updateBackground);
+  
+    return () => {
+      window.removeEventListener('mousemove', updateBackground);
+    };
   }, [theme]);
+  
   return (
     <>
       <Header t={t}/>
