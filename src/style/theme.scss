@@ -87,10 +87,17 @@
     }
     h3 {
         color: $background-color_lightgold;
+        &:hover{
+            color: $background-color_sea;
+        }
 	}
     a {
         color: $background-color_lightgold;
         text-decoration-color: $background-color_lightgolder;
+        &:hover{
+            color: $background-color_sea;
+            text-decoration-color: $background-color_sea;
+        }
     }
     button{
         color: $background-color_sea;

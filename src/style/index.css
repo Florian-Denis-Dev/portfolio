@@ -82,9 +82,16 @@
 .dark h3 {
   color: #E8CD72;
 }
+.dark h3:hover {
+  color: #72E0E8;
+}
 .dark a {
   color: #E8CD72;
   text-decoration-color: #E8BE72;
+}
+.dark a:hover {
+  color: #72E0E8;
+  text-decoration-color: #72E0E8;
 }
 .dark button {
   color: #72E0E8;
@@ -608,7 +615,7 @@ header ul .lang:hover {
 }
 @media (max-width: 375px) {
   header ul .lang {
-    font-size: 2.5em;
+    font-size: 2em;
   }
 }
 header a {
