@@ -27,6 +27,38 @@ function Home(){
                         </Link>
                     </li>
                 </ul>
+                <ul className="brand">
+                    <li>
+                        <span className="fab fa-html5"></span>
+                    </li>
+                    <li>
+                        <span className="fab fa-css3-alt"></span>
+                    </li>
+                    <li>
+                        <span className="fab fa-sass"></span>
+                    </li>
+                    <li>
+                        <span className="fab fa-js"></span>
+                    </li>
+                    <li>
+                        <span className="fab fa-react"></span>
+                    </li>
+                    <li>
+                        <span className="fab fa-git-alt"></span>
+                    </li>
+                    <li>
+                        <span className="fab fa-node"></span>
+                    </li>
+                    <li>
+                        <span className="fas fa-database"></span>
+                    </li>
+                    <li>
+                        <span className="fas fa-cloud"></span>
+                    </li>
+                </ul>
+                <h6>
+                    HTML, CSS, SCSS, JavaScript, React, Git/GitHub, NodeJS, Express, MongoDB, API REST
+                </h6>
             </div>
         </div>
         </>
