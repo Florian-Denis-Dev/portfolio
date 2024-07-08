@@ -66,8 +66,8 @@
   overflow-x: hidden;
   @include respond (smaller) {
     overflow-x: auto;
-    overflow-y: hidden;  
+    overflow-y: auto;  
     flex-direction: column;
-    height: 100dvh;
+    height: 100vh;
   }
 }
