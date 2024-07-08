@@ -369,6 +369,8 @@ body {
 @media (max-width: 425px) {
   .about .about-text p {
     font-size: 1.5em;
+    overflow-y: auto;
+    height: 40vh;
   }
 }
 

@@ -44,6 +44,8 @@
 			}
 			@include respond (smaller) {
 				font-size: 1.5em;
+				overflow-y: auto;  
+				height: 40vh;
 			}
 		}
 	}
