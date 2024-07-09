@@ -44,5 +44,25 @@
 
 .brand {
 	display: flex;
-	gap: 1rem;
+	margin-top: 8rem;
+	gap: 2rem;
+	span{
+		font-size: xxx-large;
+		@include respond (large){
+			font-size: xx-large;
+		}
+		@include respond (smaller) {
+			font-size: large;
+		}
+	}
+	@include respond (large) {
+		margin-top: 6rem;
+	}
+	@include respond (smaller) {
+		margin-top: 3rem;
+		gap: 1rem;
+	}
+	@include respond (small) {
+		margin-top: 5rem;
+	}
 }

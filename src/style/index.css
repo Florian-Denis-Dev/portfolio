@@ -708,7 +708,37 @@ header .liens-header:hover {
 
 .brand {
   display: flex;
-  gap: 1rem;
+  margin-top: 8rem;
+  gap: 2rem;
+}
+.brand span {
+  font-size: xxx-large;
+}
+@media (max-width: 1024px) {
+  .brand span {
+    font-size: xx-large;
+  }
+}
+@media (max-width: 425px) {
+  .brand span {
+    font-size: large;
+  }
+}
+@media (max-width: 1024px) {
+  .brand {
+    margin-top: 6rem;
+  }
+}
+@media (max-width: 425px) {
+  .brand {
+    margin-top: 3rem;
+    gap: 1rem;
+  }
+}
+@media (max-width: 375px) {
+  .brand {
+    margin-top: 5rem;
+  }
 }
 
 .menu-link {
